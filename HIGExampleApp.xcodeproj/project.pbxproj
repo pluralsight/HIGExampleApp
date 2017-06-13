@@ -15,6 +15,11 @@
 		1D167C0B1EEF4FAB00016B24 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D167C0A1EEF4FAB00016B24 /* SplitViewController.swift */; };
 		1D167C0D1EEF4FF100016B24 /* MasterTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D167C0C1EEF4FF100016B24 /* MasterTableViewController.storyboard */; };
 		1D167C101EEF513700016B24 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D167C0F1EEF513700016B24 /* MasterTableViewController.swift */; };
+		1D167C121EF0415200016B24 /* HIGElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D167C111EF0415200016B24 /* HIGElement.swift */; };
+		1D3FD78B1EF04253007F9610 /* MasterSubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3FD78A1EF04253007F9610 /* MasterSubTableViewController.swift */; };
+		1D3FD78F1EF04523007F9610 /* HIGElementDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3FD78E1EF04523007F9610 /* HIGElementDataSource.swift */; };
+		1D3FD7911EF04631007F9610 /* HIGElementDataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3FD7901EF04631007F9610 /* HIGElementDataSourceFactory.swift */; };
+		1D3FD7941EF047DD007F9610 /* HIGControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3FD7931EF047DD007F9610 /* HIGControlsDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		1D167C0A1EEF4FAB00016B24 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		1D167C0C1EEF4FF100016B24 /* MasterTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MasterTableViewController.storyboard; sourceTree = "<group>"; };
 		1D167C0F1EEF513700016B24 /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		1D167C111EF0415200016B24 /* HIGElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGElement.swift; sourceTree = "<group>"; };
+		1D3FD78A1EF04253007F9610 /* MasterSubTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterSubTableViewController.swift; sourceTree = "<group>"; };
+		1D3FD78E1EF04523007F9610 /* HIGElementDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGElementDataSource.swift; sourceTree = "<group>"; };
+		1D3FD7901EF04631007F9610 /* HIGElementDataSourceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGElementDataSourceFactory.swift; sourceTree = "<group>"; };
+		1D3FD7931EF047DD007F9610 /* HIGControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGControlsDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +87,21 @@
 			children = (
 				1D167C0C1EEF4FF100016B24 /* MasterTableViewController.storyboard */,
 				1D167C0F1EEF513700016B24 /* MasterTableViewController.swift */,
+				1D167C111EF0415200016B24 /* HIGElement.swift */,
+				1D3FD78A1EF04253007F9610 /* MasterSubTableViewController.swift */,
+				1D3FD7921EF047B5007F9610 /* Element Data Sources */,
+				1D3FD7901EF04631007F9610 /* HIGElementDataSourceFactory.swift */,
 			);
 			name = Master;
+			sourceTree = "<group>";
+		};
+		1D3FD7921EF047B5007F9610 /* Element Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1D3FD78E1EF04523007F9610 /* HIGElementDataSource.swift */,
+				1D3FD7931EF047DD007F9610 /* HIGControlsDataSource.swift */,
+			);
+			name = "Element Data Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3FD78B1EF04253007F9610 /* MasterSubTableViewController.swift in Sources */,
 				1D167C101EEF513700016B24 /* MasterTableViewController.swift in Sources */,
 				1D167BFB1EEF49A100016B24 /* ViewController.swift in Sources */,
+				1D3FD7941EF047DD007F9610 /* HIGControlsDataSource.swift in Sources */,
+				1D3FD7911EF04631007F9610 /* HIGElementDataSourceFactory.swift in Sources */,
+				1D167C121EF0415200016B24 /* HIGElement.swift in Sources */,
+				1D3FD78F1EF04523007F9610 /* HIGElementDataSource.swift in Sources */,
 				1D167BF91EEF49A100016B24 /* AppDelegate.swift in Sources */,
 				1D167C0B1EEF4FAB00016B24 /* SplitViewController.swift in Sources */,
 			);

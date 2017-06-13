@@ -10,4 +10,10 @@ import UIKit
 
 class MasterTableViewController: UITableViewController {
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        guard let masterSubViewController = segue.destination as? MasterSubTableViewController else { return }
+        masterSubViewController.higElement = HIGElement(rawValue: identifier)
+    }
+    
 }

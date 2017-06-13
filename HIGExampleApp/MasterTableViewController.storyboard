@@ -97,7 +97,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Dwf-1k-GFX" kind="show" id="1M6-Fr-yIs"/>
+                                            <segue destination="Dwf-1k-GFX" kind="show" identifier="controls" id="1M6-Fr-yIs"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -113,21 +113,30 @@
             </objects>
             <point key="canvasLocation" x="-23.199999999999999" y="178.56071964017991"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Master Sub Table View Controller-->
         <scene sceneID="zZU-TJ-TEN">
             <objects>
-                <tableViewController id="Dwf-1k-GFX" sceneMemberID="viewController">
+                <tableViewController id="Dwf-1k-GFX" customClass="MasterSubTableViewController" customModule="HIGExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uUJ-bd-EQf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FJo-w2-5oQ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="cvt-pa-tzQ" style="IBUITableViewCellStyleDefault" id="FJo-w2-5oQ">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FJo-w2-5oQ" id="nYp-WJ-aZM">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cvt-pa-tzQ">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -139,10 +148,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qu-pz-atS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="179"/>
+            <point key="canvasLocation" x="854" y="179"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hv1-k3-DRO"/>
+        <segue reference="1M6-Fr-yIs"/>
     </inferredMetricsTieBreakers>
 </document>
