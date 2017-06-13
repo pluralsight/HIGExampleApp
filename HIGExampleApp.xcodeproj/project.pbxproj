@@ -20,6 +20,7 @@
 		1D3FD78F1EF04523007F9610 /* HIGElementDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3FD78E1EF04523007F9610 /* HIGElementDataSource.swift */; };
 		1D3FD7911EF04631007F9610 /* HIGElementDataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3FD7901EF04631007F9610 /* HIGElementDataSourceFactory.swift */; };
 		1D3FD7941EF047DD007F9610 /* HIGControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3FD7931EF047DD007F9610 /* HIGControlsDataSource.swift */; };
+		1D3FD7971EF0553F007F9610 /* Buttons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7961EF0553F007F9610 /* Buttons.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1D3FD78E1EF04523007F9610 /* HIGElementDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGElementDataSource.swift; sourceTree = "<group>"; };
 		1D3FD7901EF04631007F9610 /* HIGElementDataSourceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGElementDataSourceFactory.swift; sourceTree = "<group>"; };
 		1D3FD7931EF047DD007F9610 /* HIGControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGControlsDataSource.swift; sourceTree = "<group>"; };
+		1D3FD7961EF0553F007F9610 /* Buttons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Buttons.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		1D167BF71EEF49A100016B24 /* HIGExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				1D3FD7951EF05503007F9610 /* Controls */,
 				1D167C0E1EEF50E300016B24 /* Master */,
 				1D167BF81EEF49A100016B24 /* AppDelegate.swift */,
 				1D167BFA1EEF49A100016B24 /* ViewController.swift */,
@@ -102,6 +105,14 @@
 				1D3FD7931EF047DD007F9610 /* HIGControlsDataSource.swift */,
 			);
 			name = "Element Data Sources";
+			sourceTree = "<group>";
+		};
+		1D3FD7951EF05503007F9610 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				1D3FD7961EF0553F007F9610 /* Buttons.storyboard */,
+			);
+			name = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3FD7971EF0553F007F9610 /* Buttons.storyboard in Resources */,
 				1D167C031EEF49A100016B24 /* LaunchScreen.storyboard in Resources */,
 				1D167C0D1EEF4FF100016B24 /* MasterTableViewController.storyboard in Resources */,
 				1D167C001EEF49A100016B24 /* Assets.xcassets in Resources */,

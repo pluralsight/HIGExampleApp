@@ -44,5 +44,12 @@ class MasterSubTableViewController: UITableViewController {
         cell.textLabel?.text = elementDataSource?.title(at: indexPath.row)
         return cell
     }
+    
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vc = elementDataSource?.viewController(for: indexPath.row) else { return }
+        showDetailViewController(vc, sender: self)
+    }
 
 }
