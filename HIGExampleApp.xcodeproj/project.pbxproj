@@ -12,6 +12,9 @@
 		1D167BFE1EEF49A100016B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D167BFC1EEF49A100016B24 /* Main.storyboard */; };
 		1D167C001EEF49A100016B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D167BFF1EEF49A100016B24 /* Assets.xcassets */; };
 		1D167C031EEF49A100016B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D167C011EEF49A100016B24 /* LaunchScreen.storyboard */; };
+		1D167C0B1EEF4FAB00016B24 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D167C0A1EEF4FAB00016B24 /* SplitViewController.swift */; };
+		1D167C0D1EEF4FF100016B24 /* MasterTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D167C0C1EEF4FF100016B24 /* MasterTableViewController.storyboard */; };
+		1D167C101EEF513700016B24 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D167C0F1EEF513700016B24 /* MasterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1D167BFF1EEF49A100016B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D167C021EEF49A100016B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D167C041EEF49A100016B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D167C0A1EEF4FAB00016B24 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		1D167C0C1EEF4FF100016B24 /* MasterTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MasterTableViewController.storyboard; sourceTree = "<group>"; };
+		1D167C0F1EEF513700016B24 /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		1D167BF71EEF49A100016B24 /* HIGExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				1D167C0E1EEF50E300016B24 /* Master */,
 				1D167BF81EEF49A100016B24 /* AppDelegate.swift */,
 				1D167BFA1EEF49A100016B24 /* ViewController.swift */,
+				1D167C0A1EEF4FAB00016B24 /* SplitViewController.swift */,
 				1D167BFC1EEF49A100016B24 /* Main.storyboard */,
 				1D167BFF1EEF49A100016B24 /* Assets.xcassets */,
 				1D167C011EEF49A100016B24 /* LaunchScreen.storyboard */,
 				1D167C041EEF49A100016B24 /* Info.plist */,
 			);
 			path = HIGExampleApp;
+			sourceTree = "<group>";
+		};
+		1D167C0E1EEF50E300016B24 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				1D167C0C1EEF4FF100016B24 /* MasterTableViewController.storyboard */,
+				1D167C0F1EEF513700016B24 /* MasterTableViewController.swift */,
+			);
+			name = Master;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D167C031EEF49A100016B24 /* LaunchScreen.storyboard in Resources */,
+				1D167C0D1EEF4FF100016B24 /* MasterTableViewController.storyboard in Resources */,
 				1D167C001EEF49A100016B24 /* Assets.xcassets in Resources */,
 				1D167BFE1EEF49A100016B24 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D167C101EEF513700016B24 /* MasterTableViewController.swift in Sources */,
 				1D167BFB1EEF49A100016B24 /* ViewController.swift in Sources */,
 				1D167BF91EEF49A100016B24 /* AppDelegate.swift in Sources */,
+				1D167C0B1EEF4FAB00016B24 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +324,7 @@
 				1D167C091EEF49A100016B24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
