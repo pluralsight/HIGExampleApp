@@ -21,6 +21,16 @@
 		1D3FD7911EF04631007F9610 /* HIGElementDataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3FD7901EF04631007F9610 /* HIGElementDataSourceFactory.swift */; };
 		1D3FD7941EF047DD007F9610 /* HIGControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3FD7931EF047DD007F9610 /* HIGControlsDataSource.swift */; };
 		1D3FD7971EF0553F007F9610 /* Buttons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7961EF0553F007F9610 /* Buttons.storyboard */; };
+		1D3FD7991EF05D9D007F9610 /* EditMenus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7981EF05D9D007F9610 /* EditMenus.storyboard */; };
+		1D3FD79B1EF05DE1007F9610 /* PageControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD79A1EF05DE1007F9610 /* PageControls.storyboard */; };
+		1D3FD79D1EF05E18007F9610 /* Pickers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD79C1EF05E18007F9610 /* Pickers.storyboard */; };
+		1D3FD79F1EF05F36007F9610 /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD79E1EF05F36007F9610 /* Progress.storyboard */; };
+		1D3FD7A11EF05F66007F9610 /* RefreshContentControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7A01EF05F66007F9610 /* RefreshContentControl.storyboard */; };
+		1D3FD7A31EF05FB1007F9610 /* SegmentedControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7A21EF05FB1007F9610 /* SegmentedControls.storyboard */; };
+		1D3FD7A51EF05FCD007F9610 /* Sliders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7A41EF05FCD007F9610 /* Sliders.storyboard */; };
+		1D3FD7A71EF05FED007F9610 /* Steppers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7A61EF05FED007F9610 /* Steppers.storyboard */; };
+		1D3FD7A91EF0600A007F9610 /* Switches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7A81EF0600A007F9610 /* Switches.storyboard */; };
+		1D3FD7AB1EF0602B007F9610 /* TextFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +50,16 @@
 		1D3FD7901EF04631007F9610 /* HIGElementDataSourceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGElementDataSourceFactory.swift; sourceTree = "<group>"; };
 		1D3FD7931EF047DD007F9610 /* HIGControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGControlsDataSource.swift; sourceTree = "<group>"; };
 		1D3FD7961EF0553F007F9610 /* Buttons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Buttons.storyboard; sourceTree = "<group>"; };
+		1D3FD7981EF05D9D007F9610 /* EditMenus.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditMenus.storyboard; sourceTree = "<group>"; };
+		1D3FD79A1EF05DE1007F9610 /* PageControls.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageControls.storyboard; sourceTree = "<group>"; };
+		1D3FD79C1EF05E18007F9610 /* Pickers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pickers.storyboard; sourceTree = "<group>"; };
+		1D3FD79E1EF05F36007F9610 /* Progress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
+		1D3FD7A01EF05F66007F9610 /* RefreshContentControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RefreshContentControl.storyboard; sourceTree = "<group>"; };
+		1D3FD7A21EF05FB1007F9610 /* SegmentedControls.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SegmentedControls.storyboard; sourceTree = "<group>"; };
+		1D3FD7A41EF05FCD007F9610 /* Sliders.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Sliders.storyboard; sourceTree = "<group>"; };
+		1D3FD7A61EF05FED007F9610 /* Steppers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Steppers.storyboard; sourceTree = "<group>"; };
+		1D3FD7A81EF0600A007F9610 /* Switches.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Switches.storyboard; sourceTree = "<group>"; };
+		1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextFields.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +131,16 @@
 			isa = PBXGroup;
 			children = (
 				1D3FD7961EF0553F007F9610 /* Buttons.storyboard */,
+				1D3FD7981EF05D9D007F9610 /* EditMenus.storyboard */,
+				1D3FD79A1EF05DE1007F9610 /* PageControls.storyboard */,
+				1D3FD79C1EF05E18007F9610 /* Pickers.storyboard */,
+				1D3FD79E1EF05F36007F9610 /* Progress.storyboard */,
+				1D3FD7A01EF05F66007F9610 /* RefreshContentControl.storyboard */,
+				1D3FD7A21EF05FB1007F9610 /* SegmentedControls.storyboard */,
+				1D3FD7A41EF05FCD007F9610 /* Sliders.storyboard */,
+				1D3FD7A61EF05FED007F9610 /* Steppers.storyboard */,
+				1D3FD7A81EF0600A007F9610 /* Switches.storyboard */,
+				1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -176,10 +206,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D3FD7971EF0553F007F9610 /* Buttons.storyboard in Resources */,
+				1D3FD7AB1EF0602B007F9610 /* TextFields.storyboard in Resources */,
+				1D3FD79B1EF05DE1007F9610 /* PageControls.storyboard in Resources */,
+				1D3FD7A91EF0600A007F9610 /* Switches.storyboard in Resources */,
+				1D3FD79D1EF05E18007F9610 /* Pickers.storyboard in Resources */,
+				1D3FD7991EF05D9D007F9610 /* EditMenus.storyboard in Resources */,
 				1D167C031EEF49A100016B24 /* LaunchScreen.storyboard in Resources */,
 				1D167C0D1EEF4FF100016B24 /* MasterTableViewController.storyboard in Resources */,
+				1D3FD7A11EF05F66007F9610 /* RefreshContentControl.storyboard in Resources */,
+				1D3FD79F1EF05F36007F9610 /* Progress.storyboard in Resources */,
+				1D3FD7A71EF05FED007F9610 /* Steppers.storyboard in Resources */,
 				1D167C001EEF49A100016B24 /* Assets.xcassets in Resources */,
+				1D3FD7A31EF05FB1007F9610 /* SegmentedControls.storyboard in Resources */,
 				1D167BFE1EEF49A100016B24 /* Main.storyboard in Resources */,
+				1D3FD7A51EF05FCD007F9610 /* Sliders.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

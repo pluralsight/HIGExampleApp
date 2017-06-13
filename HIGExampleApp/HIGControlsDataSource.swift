@@ -33,17 +33,33 @@ class HIGControlsDataSource: HIGElementDataSource {
     }
     
     func viewController(for index: Int) -> UIViewController {
-        let vc: UIViewController
+        let storyboardName: String
+        
         switch itemList[index] {
         case .buttons:
-            let sb = UIStoryboard(name: "Buttons", bundle: nil)
-            vc = sb.instantiateInitialViewController()!
-        default:
-            vc = UIViewController()
-            vc.view.backgroundColor = .red
+            storyboardName = "Buttons"
+        case .editMenus:
+            storyboardName = "EditMenus"
+        case .pageControls:
+            storyboardName = "PageControls"
+        case .pickers:
+            storyboardName = "Pickers"
+        case .progress:
+            storyboardName = "Progress"
+        case .refreshContentControl:
+            storyboardName = "RefreshContentControl"
+        case .segmentedControls:
+            storyboardName = "SegmentedControls"
+        case .sliders:
+            storyboardName = "Sliders"
+        case .switches:
+            storyboardName = "Switches"
+        case .textFields:
+            storyboardName = "TextFields"
         }
         
-        return vc
+        let sb = UIStoryboard(name: storyboardName, bundle: nil)
+        return sb.instantiateInitialViewController()!
     }
 }
 
@@ -64,7 +80,7 @@ enum HIGControl {
         case .buttons:
             return "Buttons"
         case .editMenus:
-            return "Edit Menues"
+            return "Edit Menus"
         case .pageControls:
             return "Page Controls"
         case .pickers:
