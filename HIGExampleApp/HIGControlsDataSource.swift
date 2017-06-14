@@ -84,7 +84,7 @@ enum HIGControl {
         case .pageControls:
             return "Page Controls"
         case .pickers:
-            return "Pickers (UIPickerView)"
+            return "Pickers"
         case .progress:
             return "Progress Indicators"
         case .refreshContentControl:

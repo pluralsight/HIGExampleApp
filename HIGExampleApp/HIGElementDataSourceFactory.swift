@@ -12,9 +12,14 @@ struct HIGElementDataSourceFactory {
     
     static func dataSource(for element: HIGElement) -> HIGElementDataSource {
         switch element {
+        case .visualDesign:
+            return HIGVisualDesignDataSource()
+        case .bars:
+            return HIGBarsDataSource()
+        case .views:
+            return HIGViewsDataSource()
         case .controls:
             return HIGControlsDataSource()
         }
     }
-    
 }
