@@ -51,6 +51,10 @@
 		EB8F3DDC1EF1815600C2948A /* TextViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DDB1EF1815600C2948A /* TextViews.storyboard */; };
 		EB8F3DDE1EF1816200C2948A /* WebViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DDD1EF1816200C2948A /* WebViews.storyboard */; };
 		EB8F3DE01EF1817300C2948A /* Typography.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DDF1EF1817300C2948A /* Typography.storyboard */; };
+		EB8F3DE41EF2FAFD00C2948A /* PickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DE31EF2FAFD00C2948A /* PickersViewController.swift */; };
+		EB8F3DE81EF3240800C2948A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DE71EF3240800C2948A /* PageViewController.swift */; };
+		EB8F3DEB1EF32E1100C2948A /* ControlsPageViewControllerDataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DEA1EF32E1100C2948A /* ControlsPageViewControllerDataSourceFactory.swift */; };
+		EB8F3DED1EF32F5100C2948A /* ControlElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DEC1EF32F5100C2948A /* ControlElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +104,10 @@
 		EB8F3DDB1EF1815600C2948A /* TextViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextViews.storyboard; sourceTree = "<group>"; };
 		EB8F3DDD1EF1816200C2948A /* WebViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebViews.storyboard; sourceTree = "<group>"; };
 		EB8F3DDF1EF1817300C2948A /* Typography.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Typography.storyboard; sourceTree = "<group>"; };
+		EB8F3DE31EF2FAFD00C2948A /* PickersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickersViewController.swift; sourceTree = "<group>"; };
+		EB8F3DE71EF3240800C2948A /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		EB8F3DEA1EF32E1100C2948A /* ControlsPageViewControllerDataSourceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsPageViewControllerDataSourceFactory.swift; sourceTree = "<group>"; };
+		EB8F3DEC1EF32F5100C2948A /* ControlElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +195,10 @@
 				1D3FD7A61EF05FED007F9610 /* Steppers.storyboard */,
 				1D3FD7A81EF0600A007F9610 /* Switches.storyboard */,
 				1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */,
+				EB8F3DE31EF2FAFD00C2948A /* PickersViewController.swift */,
+				EB8F3DE71EF3240800C2948A /* PageViewController.swift */,
+				EB8F3DEA1EF32E1100C2948A /* ControlsPageViewControllerDataSourceFactory.swift */,
+				EB8F3DEC1EF32F5100C2948A /* ControlElement.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -332,16 +344,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D3FD78B1EF04253007F9610 /* MasterSubTableViewController.swift in Sources */,
+				EB8F3DE81EF3240800C2948A /* PageViewController.swift in Sources */,
 				1D167C101EEF513700016B24 /* MasterTableViewController.swift in Sources */,
 				EB8F3DBB1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift in Sources */,
 				EB8F3DB71EF0A05500C2948A /* HIGViewsDataSource.swift in Sources */,
 				1D167BFB1EEF49A100016B24 /* ViewController.swift in Sources */,
 				1D3FD7941EF047DD007F9610 /* HIGControlsDataSource.swift in Sources */,
 				EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */,
+				EB8F3DE41EF2FAFD00C2948A /* PickersViewController.swift in Sources */,
 				1D3FD7911EF04631007F9610 /* HIGElementDataSourceFactory.swift in Sources */,
+				EB8F3DED1EF32F5100C2948A /* ControlElement.swift in Sources */,
 				1D167C121EF0415200016B24 /* HIGElement.swift in Sources */,
 				1D3FD78F1EF04523007F9610 /* HIGElementDataSource.swift in Sources */,
 				1D167BF91EEF49A100016B24 /* AppDelegate.swift in Sources */,
+				EB8F3DEB1EF32E1100C2948A /* ControlsPageViewControllerDataSourceFactory.swift in Sources */,
 				1D167C0B1EEF4FAB00016B24 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

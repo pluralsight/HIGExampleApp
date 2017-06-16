@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rGq-k1-aLa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZI0-oJ-YMP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="ZMR-8G-rWe">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZI0-oJ-YMP" customClass="PageViewController" customModule="HIGExampleApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6AP-x7-zZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="179"/>
+        </scene>
         <!--Pickers-->
         <scene sceneID="W0a-9U-LKp">
             <objects>
-                <viewController title="Pickers" id="rGq-k1-aLa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PickerView" title="Pickers" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rGq-k1-aLa" customClass="PickersViewController" customModule="HIGExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ovc-eC-tzD"/>
                         <viewControllerLayoutGuide type="bottom" id="1t6-X8-35H"/>
@@ -22,31 +30,66 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98t-2Z-Kic">
-                                <rect key="frame" x="0.0" y="225" width="375" height="216"/>
+                                <rect key="frame" x="27.5" y="225" width="320" height="216"/>
                             </pickerView>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZuY-9D-sF0">
-                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
-                                <date key="date" timeIntervalSinceReferenceDate="519144714.38209897">
-                                    <!--2017-06-14 14:51:54 +0000-->
-                                </date>
-                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="98t-2Z-Kic" firstAttribute="leading" secondItem="ZuY-9D-sF0" secondAttribute="leading" id="0WT-5Y-FZD"/>
-                            <constraint firstAttribute="trailing" secondItem="98t-2Z-Kic" secondAttribute="trailing" id="66f-wz-7vm"/>
-                            <constraint firstItem="98t-2Z-Kic" firstAttribute="centerY" secondItem="5Gu-am-Qgq" secondAttribute="centerY" id="L18-GY-wzv"/>
-                            <constraint firstItem="ZuY-9D-sF0" firstAttribute="bottom" secondItem="1t6-X8-35H" secondAttribute="top" id="Oui-HW-EZm"/>
-                            <constraint firstItem="ZuY-9D-sF0" firstAttribute="centerX" secondItem="5Gu-am-Qgq" secondAttribute="centerX" id="WTO-Rr-18Q"/>
-                            <constraint firstItem="98t-2Z-Kic" firstAttribute="leading" secondItem="5Gu-am-Qgq" secondAttribute="leading" id="WiU-QG-Fej"/>
-                            <constraint firstItem="98t-2Z-Kic" firstAttribute="centerX" secondItem="5Gu-am-Qgq" secondAttribute="centerX" id="lve-JM-ai0"/>
-                            <constraint firstItem="98t-2Z-Kic" firstAttribute="trailing" secondItem="ZuY-9D-sF0" secondAttribute="trailing" id="ph3-4m-Kbs"/>
+                            <constraint firstItem="98t-2Z-Kic" firstAttribute="centerY" secondItem="5Gu-am-Qgq" secondAttribute="centerY" id="5iF-3n-l4p"/>
+                            <constraint firstItem="98t-2Z-Kic" firstAttribute="centerX" secondItem="5Gu-am-Qgq" secondAttribute="centerX" id="OuJ-MO-oir"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="98t-2Z-Kic" id="S1b-Td-Ml0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Brv-uY-4cL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156" y="180"/>
+            <point key="canvasLocation" x="143" y="179"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iGN-XH-mMm">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SRh-4u-y9S" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4fF-rc-aDB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sqh-CY-unm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cvb-MT-q3J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oJh-GZ-Yzz">
+                                <rect key="frame" x="27.5" y="117.5" width="320" height="432"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zl3-7d-mQL">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="519243387.8707">
+                                            <!--2017-06-15 18:16:27 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XOs-Ap-0hc">
+                                        <rect key="frame" x="0.0" y="216" width="320" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="519243391.49414802">
+                                            <!--2017-06-15 18:16:31 +0000-->
+                                        </date>
+                                    </datePicker>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XOs-Ap-0hc" firstAttribute="centerX" secondItem="oJh-GZ-Yzz" secondAttribute="centerX" id="uYm-YB-VdE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oJh-GZ-Yzz" firstAttribute="centerY" secondItem="cvb-MT-q3J" secondAttribute="centerY" id="UPk-3A-M4d"/>
+                            <constraint firstItem="oJh-GZ-Yzz" firstAttribute="centerX" secondItem="cvb-MT-q3J" secondAttribute="centerX" id="zmc-V4-NGg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghu-xl-bbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="179"/>
         </scene>
     </scenes>
 </document>
