@@ -11,7 +11,7 @@ import UIKit
 
 class HIGControlsDataSource: HIGElementDataSource {
     
-    let itemList: [HIGControl] = [
+    static let itemList: [HIGControl] = [
         .buttons,
         .editMenus,
         .pageControls,
@@ -25,17 +25,17 @@ class HIGControlsDataSource: HIGElementDataSource {
     ]
     
     var numberOfItems: Int {
-        return itemList.count
+        return HIGControlsDataSource.itemList.count
     }
     
     func title(at index: Int) -> String {
-        return itemList[index].displayTitle
+        return HIGControlsDataSource.itemList[index].displayTitle
     }
     
     func viewController(for index: Int) -> UIViewController {
         let storyboardName: String
         
-        switch itemList[index] {
+        switch HIGControlsDataSource.itemList[index] {
         case .buttons:
             storyboardName = "Buttons"
         case .editMenus:
