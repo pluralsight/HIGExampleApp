@@ -38,6 +38,7 @@
 		1DE509921EF83F8900B37AB4 /* ActionSheetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509911EF83F8900B37AB4 /* ActionSheetsViewController.swift */; };
 		1DE509941EF842AD00B37AB4 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */; };
 		1DE509961EF843C100B37AB4 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509951EF843C100B37AB4 /* ActivityViewController.swift */; };
+		1DE509981EF8466300B37AB4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509971EF8466300B37AB4 /* CollectionViewController.swift */; };
 		EB8F3DB71EF0A05500C2948A /* HIGViewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */; };
 		EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */; };
 		EB8F3DBB1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */; };
@@ -98,6 +99,7 @@
 		1DE509911EF83F8900B37AB4 /* ActionSheetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetsViewController.swift; sourceTree = "<group>"; };
 		1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
 		1DE509951EF843C100B37AB4 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		1DE509971EF8466300B37AB4 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGViewsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGBarsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGVisualDesignDataSource.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				1DE509911EF83F8900B37AB4 /* ActionSheetsViewController.swift */,
 				1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */,
 				1DE509951EF843C100B37AB4 /* ActivityViewController.swift */,
+				1DE509971EF8466300B37AB4 /* CollectionViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				1D3FD7941EF047DD007F9610 /* HIGControlsDataSource.swift in Sources */,
 				EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */,
 				1DE5098D1EF831E000B37AB4 /* RefreshContentViewController.swift in Sources */,
+				1DE509981EF8466300B37AB4 /* CollectionViewController.swift in Sources */,
 				1DE509941EF842AD00B37AB4 /* AlertsViewController.swift in Sources */,
 				EB8F3DE41EF2FAFD00C2948A /* PickersViewController.swift in Sources */,
 				1D3FD7911EF04631007F9610 /* HIGElementDataSourceFactory.swift in Sources */,
