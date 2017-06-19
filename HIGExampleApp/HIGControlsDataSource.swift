@@ -20,6 +20,7 @@ class HIGControlsDataSource: HIGElementDataSource {
         .refreshContentControl,
         .segmentedControls,
         .sliders,
+        .steppers,
         .switches,
         .textFields
     ]
@@ -52,6 +53,8 @@ class HIGControlsDataSource: HIGElementDataSource {
             storyboardName = "SegmentedControls"
         case .sliders:
             storyboardName = "Sliders"
+        case .steppers:
+            storyboardName = "Steppers"
         case .switches:
             storyboardName = "Switches"
         case .textFields:
@@ -72,6 +75,7 @@ enum HIGControl {
     case refreshContentControl
     case segmentedControls
     case sliders
+    case steppers
     case switches
     case textFields
     
@@ -93,6 +97,8 @@ enum HIGControl {
             return "Segmented Controls"
         case .sliders:
             return "Sliders"
+        case .steppers:
+            return "Steppers"
         case .switches:
             return "Switches"
         case .textFields:

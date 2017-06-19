@@ -12,7 +12,7 @@
         <!--Steppers-->
         <scene sceneID="3UO-pH-b41">
             <objects>
-                <viewController title="Steppers" id="YZp-td-uyW" sceneMemberID="viewController">
+                <viewController title="Steppers" id="YZp-td-uyW" customClass="SteppersViewController" customModule="HIGExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Adg-vA-S5G"/>
                         <viewControllerLayoutGuide type="bottom" id="atO-4k-kKW"/>
@@ -20,8 +20,34 @@
                     <view key="view" contentMode="scaleToFill" id="l9g-BD-qG1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pDs-u2-QBf">
+                                <rect key="frame" x="140" y="309" width="94" height="49.5"/>
+                                <subviews>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fpD-2r-n6c">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="29"/>
+                                        <connections>
+                                            <action selector="stepperChange:" destination="YZp-td-uyW" eventType="valueChanged" id="tJd-Xz-mOp"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehH-RW-s8V">
+                                        <rect key="frame" x="42" y="29" width="10.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pDs-u2-QBf" firstAttribute="centerX" secondItem="l9g-BD-qG1" secondAttribute="centerX" id="534-yS-Mzx"/>
+                            <constraint firstItem="pDs-u2-QBf" firstAttribute="centerY" secondItem="l9g-BD-qG1" secondAttribute="centerY" id="NtF-pk-Uta"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="ehH-RW-s8V" id="Jbe-fm-SZc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ul-q8-aLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
