@@ -63,6 +63,7 @@
 		EB8F3DE81EF3240800C2948A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DE71EF3240800C2948A /* PageViewController.swift */; };
 		EB8F3DEB1EF32E1100C2948A /* PageViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DEA1EF32E1100C2948A /* PageViewControllerDataSource.swift */; };
 		EB8F3DED1EF32F5100C2948A /* ControlElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DEC1EF32F5100C2948A /* ControlElement.swift */; };
+		EB8F3DEF1EF879B200C2948A /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DEE1EF879B200C2948A /* MapsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +125,7 @@
 		EB8F3DE71EF3240800C2948A /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		EB8F3DEA1EF32E1100C2948A /* PageViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewControllerDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DEC1EF32F5100C2948A /* ControlElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlElement.swift; sourceTree = "<group>"; };
+		EB8F3DEE1EF879B200C2948A /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 				1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */,
 				1DE509951EF843C100B37AB4 /* ActivityViewController.swift */,
 				1DE509971EF8466300B37AB4 /* CollectionViewController.swift */,
+				EB8F3DEE1EF879B200C2948A /* MapsViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				1DE509981EF8466300B37AB4 /* CollectionViewController.swift in Sources */,
 				1DE509941EF842AD00B37AB4 /* AlertsViewController.swift in Sources */,
 				EB8F3DE41EF2FAFD00C2948A /* PickersViewController.swift in Sources */,
+				EB8F3DEF1EF879B200C2948A /* MapsViewController.swift in Sources */,
 				1D3FD7911EF04631007F9610 /* HIGElementDataSourceFactory.swift in Sources */,
 				EB8F3DED1EF32F5100C2948A /* ControlElement.swift in Sources */,
 				1D167C121EF0415200016B24 /* HIGElement.swift in Sources */,
