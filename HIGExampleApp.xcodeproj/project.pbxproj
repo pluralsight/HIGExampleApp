@@ -33,6 +33,7 @@
 		1D3FD7AB1EF0602B007F9610 /* TextFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */; };
 		1DE509851EF8273000B37AB4 /* EditMenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509841EF8273000B37AB4 /* EditMenusViewController.swift */; };
 		1DE5098B1EF82DCD00B37AB4 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5098A1EF82DCD00B37AB4 /* ProgressViewController.swift */; };
+		1DE5098D1EF831E000B37AB4 /* RefreshContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5098C1EF831E000B37AB4 /* RefreshContentViewController.swift */; };
 		EB8F3DB71EF0A05500C2948A /* HIGViewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */; };
 		EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */; };
 		EB8F3DBB1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */; };
@@ -88,6 +89,7 @@
 		1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextFields.storyboard; sourceTree = "<group>"; };
 		1DE509841EF8273000B37AB4 /* EditMenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMenusViewController.swift; sourceTree = "<group>"; };
 		1DE5098A1EF82DCD00B37AB4 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		1DE5098C1EF831E000B37AB4 /* RefreshContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshContentViewController.swift; sourceTree = "<group>"; };
 		EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGViewsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGBarsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGVisualDesignDataSource.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				EB8F3DEC1EF32F5100C2948A /* ControlElement.swift */,
 				1DE509841EF8273000B37AB4 /* EditMenusViewController.swift */,
 				1DE5098A1EF82DCD00B37AB4 /* ProgressViewController.swift */,
+				1DE5098C1EF831E000B37AB4 /* RefreshContentViewController.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				1D167BFB1EEF49A100016B24 /* ViewController.swift in Sources */,
 				1D3FD7941EF047DD007F9610 /* HIGControlsDataSource.swift in Sources */,
 				EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */,
+				1DE5098D1EF831E000B37AB4 /* RefreshContentViewController.swift in Sources */,
 				EB8F3DE41EF2FAFD00C2948A /* PickersViewController.swift in Sources */,
 				1D3FD7911EF04631007F9610 /* HIGElementDataSourceFactory.swift in Sources */,
 				EB8F3DED1EF32F5100C2948A /* ControlElement.swift in Sources */,
