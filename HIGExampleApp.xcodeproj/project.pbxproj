@@ -35,6 +35,8 @@
 		1DE5098B1EF82DCD00B37AB4 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5098A1EF82DCD00B37AB4 /* ProgressViewController.swift */; };
 		1DE5098D1EF831E000B37AB4 /* RefreshContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5098C1EF831E000B37AB4 /* RefreshContentViewController.swift */; };
 		1DE5098F1EF8383100B37AB4 /* SteppersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5098E1EF8383100B37AB4 /* SteppersViewController.swift */; };
+		1DE509921EF83F8900B37AB4 /* ActionSheetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509911EF83F8900B37AB4 /* ActionSheetsViewController.swift */; };
+		1DE509941EF842AD00B37AB4 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */; };
 		EB8F3DB71EF0A05500C2948A /* HIGViewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */; };
 		EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */; };
 		EB8F3DBB1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */; };
@@ -92,6 +94,8 @@
 		1DE5098A1EF82DCD00B37AB4 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		1DE5098C1EF831E000B37AB4 /* RefreshContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshContentViewController.swift; sourceTree = "<group>"; };
 		1DE5098E1EF8383100B37AB4 /* SteppersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteppersViewController.swift; sourceTree = "<group>"; };
+		1DE509911EF83F8900B37AB4 /* ActionSheetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetsViewController.swift; sourceTree = "<group>"; };
+		1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
 		EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGViewsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGBarsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGVisualDesignDataSource.swift; sourceTree = "<group>"; };
@@ -241,6 +245,8 @@
 				EB8F3DD91EF1814300C2948A /* Tables.storyboard */,
 				EB8F3DDB1EF1815600C2948A /* TextViews.storyboard */,
 				EB8F3DDD1EF1816200C2948A /* WebViews.storyboard */,
+				1DE509911EF83F8900B37AB4 /* ActionSheetsViewController.swift */,
+				1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE509921EF83F8900B37AB4 /* ActionSheetsViewController.swift in Sources */,
 				1D3FD78B1EF04253007F9610 /* MasterSubTableViewController.swift in Sources */,
 				EB8F3DE81EF3240800C2948A /* PageViewController.swift in Sources */,
 				1D167C101EEF513700016B24 /* MasterTableViewController.swift in Sources */,
@@ -365,6 +372,7 @@
 				1D3FD7941EF047DD007F9610 /* HIGControlsDataSource.swift in Sources */,
 				EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */,
 				1DE5098D1EF831E000B37AB4 /* RefreshContentViewController.swift in Sources */,
+				1DE509941EF842AD00B37AB4 /* AlertsViewController.swift in Sources */,
 				EB8F3DE41EF2FAFD00C2948A /* PickersViewController.swift in Sources */,
 				1D3FD7911EF04631007F9610 /* HIGElementDataSourceFactory.swift in Sources */,
 				EB8F3DED1EF32F5100C2948A /* ControlElement.swift in Sources */,
