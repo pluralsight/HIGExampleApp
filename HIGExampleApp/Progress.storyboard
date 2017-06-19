@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Progress-->
         <scene sceneID="mng-LV-c1Y">
             <objects>
-                <viewController title="Progress" id="rBZ-Jm-PSh" sceneMemberID="viewController">
+                <viewController title="Progress" id="rBZ-Jm-PSh" customClass="ProgressViewController" customModule="HIGExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qwA-Eo-uUZ"/>
                         <viewControllerLayoutGuide type="bottom" id="siu-iy-Zc2"/>
@@ -20,12 +21,136 @@
                     <view key="view" contentMode="scaleToFill" id="ISl-XZ-EeF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="r09-JX-WaQ">
+                                <rect key="frame" x="16" y="44" width="343" height="282"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="lYd-xh-0jL">
+                                        <rect key="frame" x="9.5" y="0.0" width="324" height="120"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="E2g-Mb-h3X">
+                                                <rect key="frame" x="0.0" y="0.0" width="324" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvW-IP-dVj">
+                                                        <rect key="frame" x="0.0" y="5" width="284" height="30"/>
+                                                        <state key="normal" title="Toggle Animation (Hidden when stopped)"/>
+                                                        <connections>
+                                                            <action selector="topSpinnerToggle:" destination="rBZ-Jm-PSh" eventType="touchUpInside" id="acZ-Hq-Ce4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="mlG-4J-MjE">
+                                                        <rect key="frame" x="304" y="10" width="20" height="20"/>
+                                                    </activityIndicatorView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Ufr-YT-98p"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CcJ-B5-ZVf">
+                                                <rect key="frame" x="0.0" y="40" width="159" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPG-BM-IsL">
+                                                        <rect key="frame" x="0.0" y="5" width="119" height="30"/>
+                                                        <state key="normal" title="Toggle Animation"/>
+                                                        <connections>
+                                                            <action selector="middleSpinnerToggle:" destination="rBZ-Jm-PSh" eventType="touchUpInside" id="zAy-eM-a4p"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxa-KI-veW">
+                                                        <rect key="frame" x="139" y="10" width="20" height="20"/>
+                                                        <subviews>
+                                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="vZa-1x-EQZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            </activityIndicatorView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="vZa-1x-EQZ" secondAttribute="trailing" id="7Ko-eD-Agz"/>
+                                                            <constraint firstItem="vZa-1x-EQZ" firstAttribute="leading" secondItem="gxa-KI-veW" secondAttribute="leading" id="9Az-bo-3wV"/>
+                                                            <constraint firstAttribute="bottom" secondItem="vZa-1x-EQZ" secondAttribute="bottom" id="FKN-wG-9Do"/>
+                                                            <constraint firstItem="vZa-1x-EQZ" firstAttribute="top" secondItem="gxa-KI-veW" secondAttribute="top" id="vXJ-45-bec"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="zdh-5u-Oap"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yuS-60-ewp">
+                                                <rect key="frame" x="0.0" y="80" width="176" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ian-Nh-KAU">
+                                                        <rect key="frame" x="0.0" y="5" width="119" height="30"/>
+                                                        <state key="normal" title="Toggle Animation"/>
+                                                        <connections>
+                                                            <action selector="bottomSpinnerToggle:" destination="rBZ-Jm-PSh" eventType="touchUpInside" id="4P1-9o-6E9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYp-NH-q4g">
+                                                        <rect key="frame" x="139" y="1.5" width="37" height="37"/>
+                                                        <subviews>
+                                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pV5-A5-84d">
+                                                                <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
+                                                            </activityIndicatorView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="pV5-A5-84d" firstAttribute="leading" secondItem="DYp-NH-q4g" secondAttribute="leading" id="BJI-cj-NRX"/>
+                                                            <constraint firstAttribute="trailing" secondItem="pV5-A5-84d" secondAttribute="trailing" id="EwC-kc-jDs"/>
+                                                            <constraint firstItem="pV5-A5-84d" firstAttribute="top" secondItem="DYp-NH-q4g" secondAttribute="top" id="RjF-Td-31q"/>
+                                                            <constraint firstAttribute="bottom" secondItem="pV5-A5-84d" secondAttribute="bottom" id="X2r-or-qfJ"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="QHt-Ct-rrj"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yg2-5y-HGC">
+                                        <rect key="frame" x="89" y="160" width="165" height="30"/>
+                                        <state key="normal" title="Toggle Network Spinner"/>
+                                        <connections>
+                                            <action selector="networkSpinnerToggle:" destination="rBZ-Jm-PSh" eventType="touchUpInside" id="q8a-Id-X6G"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MtT-zi-AEl">
+                                        <rect key="frame" x="0.0" y="230" width="343" height="52"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcP-lA-g97">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                                <state key="normal" title="Toggle Progress Bar"/>
+                                                <connections>
+                                                    <action selector="toggleProgressBar:" destination="rBZ-Jm-PSh" eventType="touchUpInside" id="cxL-C8-vkq"/>
+                                                </connections>
+                                            </button>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tmG-R2-LIH">
+                                                <rect key="frame" x="0.0" y="50" width="343" height="2"/>
+                                            </progressView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r09-JX-WaQ" firstAttribute="centerX" secondItem="ISl-XZ-EeF" secondAttribute="centerX" id="9su-gP-dbl"/>
+                            <constraint firstItem="tmG-R2-LIH" firstAttribute="leading" secondItem="ISl-XZ-EeF" secondAttribute="leadingMargin" id="FOi-jj-Uhi"/>
+                            <constraint firstItem="r09-JX-WaQ" firstAttribute="top" secondItem="qwA-Eo-uUZ" secondAttribute="bottom" constant="24" id="KEr-9p-hVE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tmG-R2-LIH" secondAttribute="trailing" id="VZA-DM-5TG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomSpinner" destination="pV5-A5-84d" id="hGY-9m-I6L"/>
+                        <outlet property="middleSpinner" destination="vZa-1x-EQZ" id="tUX-wf-8DN"/>
+                        <outlet property="progressBar" destination="tmG-R2-LIH" id="h9z-ke-O5p"/>
+                        <outlet property="topSpinner" destination="mlG-4J-MjE" id="VkD-wR-0Mj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJh-2c-6yg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="190" y="136"/>
+            <point key="canvasLocation" x="189.59999999999999" y="135.38230884557723"/>
         </scene>
     </scenes>
 </document>
