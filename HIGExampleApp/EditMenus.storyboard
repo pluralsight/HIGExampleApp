@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Edit Menus-->
         <scene sceneID="dDT-FS-k0a">
             <objects>
-                <viewController title="Edit Menus" id="J3F-uo-QHP" sceneMemberID="viewController">
+                <viewController title="Edit Menus" id="J3F-uo-QHP" customClass="EditMenusViewController" customModule="HIGExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QU9-WS-xhq"/>
                         <viewControllerLayoutGuide type="bottom" id="obb-7q-Xvv"/>
@@ -20,12 +21,28 @@
                     <view key="view" contentMode="scaleToFill" id="uQn-LO-PFO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fQM-ke-4QO">
+                                <rect key="frame" x="16" y="44" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fQM-ke-4QO" firstAttribute="top" secondItem="QU9-WS-xhq" secondAttribute="bottom" constant="24" id="aal-Mg-PQh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fQM-ke-4QO" secondAttribute="leading" id="fIu-Td-MQn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fQM-ke-4QO" secondAttribute="trailing" id="i5f-RM-Bjb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="fQM-ke-4QO" id="zDT-BI-uJV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bb2-uH-uLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="130"/>
+            <point key="canvasLocation" x="112.8" y="129.98500749625188"/>
         </scene>
     </scenes>
 </document>

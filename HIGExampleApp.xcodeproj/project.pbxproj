@@ -31,6 +31,7 @@
 		1D3FD7A71EF05FED007F9610 /* Steppers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7A61EF05FED007F9610 /* Steppers.storyboard */; };
 		1D3FD7A91EF0600A007F9610 /* Switches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7A81EF0600A007F9610 /* Switches.storyboard */; };
 		1D3FD7AB1EF0602B007F9610 /* TextFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */; };
+		1DE509851EF8273000B37AB4 /* EditMenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509841EF8273000B37AB4 /* EditMenusViewController.swift */; };
 		EB8F3DB71EF0A05500C2948A /* HIGViewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */; };
 		EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */; };
 		EB8F3DBB1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */; };
@@ -84,6 +85,7 @@
 		1D3FD7A61EF05FED007F9610 /* Steppers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Steppers.storyboard; sourceTree = "<group>"; };
 		1D3FD7A81EF0600A007F9610 /* Switches.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Switches.storyboard; sourceTree = "<group>"; };
 		1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextFields.storyboard; sourceTree = "<group>"; };
+		1DE509841EF8273000B37AB4 /* EditMenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMenusViewController.swift; sourceTree = "<group>"; };
 		EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGViewsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGBarsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGVisualDesignDataSource.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				EB8F3DE71EF3240800C2948A /* PageViewController.swift */,
 				EB8F3DEA1EF32E1100C2948A /* PageViewControllerDataSource.swift */,
 				EB8F3DEC1EF32F5100C2948A /* ControlElement.swift */,
+				1DE509841EF8273000B37AB4 /* EditMenusViewController.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				1D3FD78B1EF04253007F9610 /* MasterSubTableViewController.swift in Sources */,
 				EB8F3DE81EF3240800C2948A /* PageViewController.swift in Sources */,
 				1D167C101EEF513700016B24 /* MasterTableViewController.swift in Sources */,
+				1DE509851EF8273000B37AB4 /* EditMenusViewController.swift in Sources */,
 				EB8F3DBB1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift in Sources */,
 				EB8F3DB71EF0A05500C2948A /* HIGViewsDataSource.swift in Sources */,
 				1D167BFB1EEF49A100016B24 /* ViewController.swift in Sources */,
