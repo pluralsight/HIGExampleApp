@@ -40,7 +40,6 @@
 		1DE509961EF843C100B37AB4 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509951EF843C100B37AB4 /* ActivityViewController.swift */; };
 		1DE509981EF8466300B37AB4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509971EF8466300B37AB4 /* CollectionViewController.swift */; };
 		EB83B8F71EF888C900374558 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83B8F61EF888C900374558 /* PopoverViewController.swift */; };
-		EB83B8F91EF88E0300374558 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83B8F81EF88E0300374558 /* ScrollViewController.swift */; };
 		EB8F3DB71EF0A05500C2948A /* HIGViewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */; };
 		EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */; };
 		EB8F3DBB1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */; };
@@ -57,7 +56,6 @@
 		EB8F3DD41EF1811B00C2948A /* Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DD31EF1811B00C2948A /* Pages.storyboard */; };
 		EB8F3DD61EF1812500C2948A /* Popovers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DD51EF1812500C2948A /* Popovers.storyboard */; };
 		EB8F3DD81EF1813500C2948A /* ScrollViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DD71EF1813500C2948A /* ScrollViews.storyboard */; };
-		EB8F3DDA1EF1814300C2948A /* Tables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DD91EF1814300C2948A /* Tables.storyboard */; };
 		EB8F3DDC1EF1815600C2948A /* TextViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DDB1EF1815600C2948A /* TextViews.storyboard */; };
 		EB8F3DDE1EF1816200C2948A /* WebViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DDD1EF1816200C2948A /* WebViews.storyboard */; };
 		EB8F3DE01EF1817300C2948A /* Typography.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DDF1EF1817300C2948A /* Typography.storyboard */; };
@@ -104,7 +102,6 @@
 		1DE509951EF843C100B37AB4 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		1DE509971EF8466300B37AB4 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		EB83B8F61EF888C900374558 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
-		EB83B8F81EF88E0300374558 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGViewsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGBarsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGVisualDesignDataSource.swift; sourceTree = "<group>"; };
@@ -121,7 +118,6 @@
 		EB8F3DD31EF1811B00C2948A /* Pages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pages.storyboard; sourceTree = "<group>"; };
 		EB8F3DD51EF1812500C2948A /* Popovers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popovers.storyboard; sourceTree = "<group>"; };
 		EB8F3DD71EF1813500C2948A /* ScrollViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScrollViews.storyboard; sourceTree = "<group>"; };
-		EB8F3DD91EF1814300C2948A /* Tables.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tables.storyboard; sourceTree = "<group>"; };
 		EB8F3DDB1EF1815600C2948A /* TextViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextViews.storyboard; sourceTree = "<group>"; };
 		EB8F3DDD1EF1816200C2948A /* WebViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebViews.storyboard; sourceTree = "<group>"; };
 		EB8F3DDF1EF1817300C2948A /* Typography.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Typography.storyboard; sourceTree = "<group>"; };
@@ -252,7 +248,6 @@
 				EB8F3DD31EF1811B00C2948A /* Pages.storyboard */,
 				EB8F3DD51EF1812500C2948A /* Popovers.storyboard */,
 				EB8F3DD71EF1813500C2948A /* ScrollViews.storyboard */,
-				EB8F3DD91EF1814300C2948A /* Tables.storyboard */,
 				EB8F3DDB1EF1815600C2948A /* TextViews.storyboard */,
 				EB8F3DDD1EF1816200C2948A /* WebViews.storyboard */,
 				1DE509911EF83F8900B37AB4 /* ActionSheetsViewController.swift */,
@@ -261,7 +256,6 @@
 				1DE509971EF8466300B37AB4 /* CollectionViewController.swift */,
 				EB8F3DEE1EF879B200C2948A /* MapsViewController.swift */,
 				EB83B8F61EF888C900374558 /* PopoverViewController.swift */,
-				EB83B8F81EF88E0300374558 /* ScrollViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -358,7 +352,6 @@
 				EB8F3DC41EF1808700C2948A /* TabBars.storyboard in Resources */,
 				1D3FD7A11EF05F66007F9610 /* RefreshContentControl.storyboard in Resources */,
 				EB8F3DCA1EF180DF00C2948A /* ActivityViews.storyboard in Resources */,
-				EB8F3DDA1EF1814300C2948A /* Tables.storyboard in Resources */,
 				1D3FD79F1EF05F36007F9610 /* Progress.storyboard in Resources */,
 				1D3FD7A71EF05FED007F9610 /* Steppers.storyboard in Resources */,
 				1D167C001EEF49A100016B24 /* Assets.xcassets in Resources */,
@@ -389,7 +382,6 @@
 				1D3FD7941EF047DD007F9610 /* HIGControlsDataSource.swift in Sources */,
 				EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */,
 				1DE5098D1EF831E000B37AB4 /* RefreshContentViewController.swift in Sources */,
-				EB83B8F91EF88E0300374558 /* ScrollViewController.swift in Sources */,
 				1DE509981EF8466300B37AB4 /* CollectionViewController.swift in Sources */,
 				1DE509941EF842AD00B37AB4 /* AlertsViewController.swift in Sources */,
 				EB8F3DE41EF2FAFD00C2948A /* PickersViewController.swift in Sources */,

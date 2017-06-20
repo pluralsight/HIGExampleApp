@@ -11,10 +11,12 @@ import UIKit
 class ActivityViewController: UIViewController {
 
     
-    @IBAction func toggleActivityView(_ sender: Any) {
+    @IBAction func toggleActivityView(_ sender: UIButton) {
         let url = URL(string: "http://www.google.com")!
         let provider = URLProvider(url: url)
         let activityVC = UIActivityViewController(activityItems: [provider], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceRect = sender.frame
+        activityVC.popoverPresentationController?.sourceView = view
         present(activityVC, animated: true, completion: nil)
     }
 

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EDe-Bs-n2E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EDe-Bs-n2E">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,17 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ps_hero" translatesAutoresizingMaskIntoConstraints="NO" id="Yby-6J-mER">
-                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ps_hero" translatesAutoresizingMaskIntoConstraints="NO" id="Yby-6J-mER">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Yby-6J-mER" secondAttribute="trailing" id="U1d-w3-Gqc"/>
-                            <constraint firstItem="Yby-6J-mER" firstAttribute="centerY" secondItem="jNq-MG-H1e" secondAttribute="centerY" id="eud-j0-aLk"/>
-                            <constraint firstItem="Yby-6J-mER" firstAttribute="leading" secondItem="jNq-MG-H1e" secondAttribute="leadingMargin" id="pTo-N3-pnl"/>
+                            <constraint firstItem="Yby-6J-mER" firstAttribute="top" secondItem="lDZ-y8-DWh" secondAttribute="bottom" id="06y-lm-zkR"/>
+                            <constraint firstAttribute="trailing" secondItem="Yby-6J-mER" secondAttribute="trailing" id="U1d-w3-Gqc"/>
+                            <constraint firstItem="Yby-6J-mER" firstAttribute="leading" secondItem="jNq-MG-H1e" secondAttribute="leading" id="pTo-N3-pnl"/>
                             <constraint firstItem="ovN-Z9-geD" firstAttribute="top" secondItem="Yby-6J-mER" secondAttribute="bottom" id="sKz-g7-u0g"/>
-                            <constraint firstItem="Yby-6J-mER" firstAttribute="centerX" secondItem="jNq-MG-H1e" secondAttribute="centerX" id="xeM-Jd-zts"/>
                         </constraints>
                     </view>
                 </viewController>

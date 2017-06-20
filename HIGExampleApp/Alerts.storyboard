@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8z-D6-H9C">
-                                <rect key="frame" x="145" y="88" width="84" height="30"/>
+                                <rect key="frame" x="145" y="318" width="84" height="30"/>
                                 <state key="normal" title="Toggle Alert"/>
                                 <connections>
                                     <action selector="toggleAlert:" destination="j0K-Yp-hGV" eventType="touchUpInside" id="Ohx-1o-keC"/>
@@ -32,8 +32,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="e8z-D6-H9C" firstAttribute="centerX" secondItem="mDl-dM-LW7" secondAttribute="centerX" id="6S2-RX-jzF"/>
-                            <constraint firstItem="e8z-D6-H9C" firstAttribute="top" secondItem="rOJ-aE-EJ7" secondAttribute="bottom" constant="68" id="xgz-uy-q9K"/>
+                            <constraint firstItem="e8z-D6-H9C" firstAttribute="centerX" secondItem="mDl-dM-LW7" secondAttribute="centerX" id="lCM-Ye-RhZ"/>
+                            <constraint firstItem="e8z-D6-H9C" firstAttribute="centerY" secondItem="mDl-dM-LW7" secondAttribute="centerY" id="nfK-f2-tb6"/>
                         </constraints>
                     </view>
                 </viewController>

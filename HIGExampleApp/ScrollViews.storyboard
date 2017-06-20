@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OdO-BJ-h8h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OdO-BJ-h8h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Scroll Views-->
         <scene sceneID="eE2-vd-b1S">
             <objects>
-                <viewController title="Scroll Views" id="OdO-BJ-h8h" customClass="ScrollViewController" customModule="HIGExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Scroll Views" id="OdO-BJ-h8h" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JYo-aj-2U6"/>
                         <viewControllerLayoutGuide type="bottom" id="l9L-wk-qKH"/>
@@ -21,25 +21,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmR-LC-5og">
-                                <rect key="frame" x="0.0" y="20" width="374" height="626"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" indicatorStyle="white" minimumZoomScale="0.01" maximumZoomScale="200" translatesAutoresizingMaskIntoConstraints="NO" id="SmR-LC-5og">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ps_hero" translatesAutoresizingMaskIntoConstraints="NO" id="H8X-bL-UAJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="1950" height="1173"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="H8X-bL-UAJ" firstAttribute="leading" secondItem="SmR-LC-5og" secondAttribute="leading" id="1GQ-BQ-Y4d"/>
+                                    <constraint firstItem="H8X-bL-UAJ" firstAttribute="top" secondItem="SmR-LC-5og" secondAttribute="top" id="dYE-zk-oJS"/>
+                                    <constraint firstAttribute="bottom" secondItem="H8X-bL-UAJ" secondAttribute="bottom" id="jLE-EC-MRs"/>
+                                    <constraint firstAttribute="trailing" secondItem="H8X-bL-UAJ" secondAttribute="trailing" id="jzC-I0-Smv"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SmR-LC-5og" firstAttribute="top" secondItem="JYo-aj-2U6" secondAttribute="bottom" id="6xP-bk-30P"/>
-                            <constraint firstItem="SmR-LC-5og" firstAttribute="centerY" secondItem="laJ-Df-Apb" secondAttribute="centerY" id="LnY-DE-CfE"/>
-                            <constraint firstItem="SmR-LC-5og" firstAttribute="centerX" secondItem="laJ-Df-Apb" secondAttribute="centerX" id="thD-EK-2tU"/>
+                            <constraint firstItem="SmR-LC-5og" firstAttribute="top" secondItem="laJ-Df-Apb" secondAttribute="top" id="21m-Gh-nX4"/>
+                            <constraint firstAttribute="trailing" secondItem="SmR-LC-5og" secondAttribute="trailing" id="OMq-sy-dYc"/>
                             <constraint firstItem="SmR-LC-5og" firstAttribute="leading" secondItem="laJ-Df-Apb" secondAttribute="leading" id="xHO-T8-7gQ"/>
+                            <constraint firstAttribute="bottom" secondItem="SmR-LC-5og" secondAttribute="bottom" id="yAe-4y-jPw"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="scrollView" destination="SmR-LC-5og" id="Zqo-hn-Tod"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Wt-2K-Si1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="934" y="-115"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ps_hero" width="1950" height="1173"/>
+    </resources>
 </document>

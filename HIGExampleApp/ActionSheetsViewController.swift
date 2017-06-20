@@ -10,7 +10,7 @@ import UIKit
 
 class ActionSheetsViewController: UIViewController {
 
-    @IBAction func toggleActionSheet(_ sender: Any) {
+    @IBAction func toggleActionSheet(_ sender: UIButton) {
         let actionSheet = UIAlertController(title: "Action Sheet Title", message: "This is an action sheet message", preferredStyle: .actionSheet)
         
         let defaultAction = UIAlertAction(title: "Default Action", style: .default, handler: nil)
@@ -19,6 +19,8 @@ class ActionSheetsViewController: UIViewController {
         actionSheet.addAction(defaultAction)
         actionSheet.addAction(destructiveAction)
         actionSheet.addAction(cancelAction)
+        actionSheet.popoverPresentationController?.sourceRect = sender.frame
+        actionSheet.popoverPresentationController?.sourceView = view
         
         present(actionSheet, animated: true, completion: nil)
     }
