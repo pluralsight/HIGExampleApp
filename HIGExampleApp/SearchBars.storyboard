@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="P2O-zU-WtT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Status Bars-->
+        <scene sceneID="oG6-Sb-AU7">
+            <objects>
+                <viewController title="Status Bars" id="P2O-zU-WtT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y4g-pk-P2m"/>
+                        <viewControllerLayoutGuide type="bottom" id="nsl-iE-ElK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yvK-Un-LNF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="F8d-na-Ewd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="413"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" prompt="Search Prompt" placeholder="Search Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="49i-Ka-g2P">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="56F-UR-ycb">
+                                        <rect key="frame" x="0.0" y="80" width="375" height="44"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" showsSearchResultsButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cuc-fr-HUA">
+                                        <rect key="frame" x="0.0" y="129" width="375" height="44"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nmw-Wr-iGL">
+                                        <rect key="frame" x="0.0" y="178" width="375" height="44"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <searchBar contentMode="redraw" showsBookmarkButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dg5-6d-O8d">
+                                        <rect key="frame" x="0.0" y="227" width="375" height="44"/>
+                                        <color key="barTintColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <searchBar contentMode="redraw" backgroundImage="ps_hero" translatesAutoresizingMaskIntoConstraints="NO" id="IpZ-zu-QkY">
+                                        <rect key="frame" x="0.0" y="276" width="375" height="44"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
+                                    </searchBar>
+                                    <searchBar contentMode="redraw" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mF1-eo-uE7">
+                                        <rect key="frame" x="0.0" y="325" width="375" height="88"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
+                                    </searchBar>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F8d-na-Ewd" firstAttribute="top" secondItem="Y4g-pk-P2m" secondAttribute="bottom" id="XHo-eZ-1Uq"/>
+                            <constraint firstItem="F8d-na-Ewd" firstAttribute="leading" secondItem="yvK-Un-LNF" secondAttribute="leading" id="dxR-fZ-BVV"/>
+                            <constraint firstAttribute="trailing" secondItem="F8d-na-Ewd" secondAttribute="trailing" id="qsP-EX-dJE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="SGY-GR-wYZ" id="uvH-15-BnU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kkp-Zf-bX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="SGY-GR-wYZ">
+                    <connections>
+                        <outlet property="delegate" destination="P2O-zU-WtT" id="3Vg-jC-d32"/>
+                        <outlet property="searchContentsController" destination="P2O-zU-WtT" id="vfd-CB-MIB"/>
+                        <outlet property="searchResultsDataSource" destination="P2O-zU-WtT" id="cAk-8s-1LJ"/>
+                        <outlet property="searchResultsDelegate" destination="P2O-zU-WtT" id="Kfi-NN-eEt"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-26" y="246"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ps_hero" width="1950" height="1173"/>
+    </resources>
+</document>

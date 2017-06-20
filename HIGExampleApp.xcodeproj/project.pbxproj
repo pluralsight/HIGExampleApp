@@ -45,7 +45,7 @@
 		EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */; };
 		EB8F3DBB1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */; };
 		EB8F3DC01EF1806000C2948A /* NavigationBars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DBF1EF1806000C2948A /* NavigationBars.storyboard */; };
-		EB8F3DC21EF1807500C2948A /* StatusBars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DC11EF1807500C2948A /* StatusBars.storyboard */; };
+		EB8F3DC21EF1807500C2948A /* SearchBars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DC11EF1807500C2948A /* SearchBars.storyboard */; };
 		EB8F3DC41EF1808700C2948A /* TabBars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DC31EF1808700C2948A /* TabBars.storyboard */; };
 		EB8F3DC61EF1809900C2948A /* Toolbars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DC51EF1809900C2948A /* Toolbars.storyboard */; };
 		EB8F3DC81EF180CB00C2948A /* ActionSheets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DC71EF180CB00C2948A /* ActionSheets.storyboard */; };
@@ -108,7 +108,7 @@
 		EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGBarsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGVisualDesignDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DBF1EF1806000C2948A /* NavigationBars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NavigationBars.storyboard; sourceTree = "<group>"; };
-		EB8F3DC11EF1807500C2948A /* StatusBars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StatusBars.storyboard; sourceTree = "<group>"; };
+		EB8F3DC11EF1807500C2948A /* SearchBars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchBars.storyboard; sourceTree = "<group>"; };
 		EB8F3DC31EF1808700C2948A /* TabBars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBars.storyboard; sourceTree = "<group>"; };
 		EB8F3DC51EF1809900C2948A /* Toolbars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Toolbars.storyboard; sourceTree = "<group>"; };
 		EB8F3DC71EF180CB00C2948A /* ActionSheets.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionSheets.storyboard; sourceTree = "<group>"; };
@@ -231,7 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				EB8F3DBF1EF1806000C2948A /* NavigationBars.storyboard */,
-				EB8F3DC11EF1807500C2948A /* StatusBars.storyboard */,
+				EB8F3DC11EF1807500C2948A /* SearchBars.storyboard */,
 				EB8F3DC31EF1808700C2948A /* TabBars.storyboard */,
 				EB8F3DC51EF1809900C2948A /* Toolbars.storyboard */,
 			);
@@ -347,7 +347,7 @@
 				1D3FD7991EF05D9D007F9610 /* EditMenus.storyboard in Resources */,
 				EB8F3DCE1EF180F800C2948A /* Collections.storyboard in Resources */,
 				1D167C031EEF49A100016B24 /* LaunchScreen.storyboard in Resources */,
-				EB8F3DC21EF1807500C2948A /* StatusBars.storyboard in Resources */,
+				EB8F3DC21EF1807500C2948A /* SearchBars.storyboard in Resources */,
 				EB8F3DD21EF1811100C2948A /* Maps.storyboard in Resources */,
 				1D167C0D1EEF4FF100016B24 /* MasterTableViewController.storyboard in Resources */,
 				EB8F3DDE1EF1816200C2948A /* WebViews.storyboard in Resources */,
