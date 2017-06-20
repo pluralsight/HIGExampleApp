@@ -12,7 +12,7 @@
         <!--Scroll Views-->
         <scene sceneID="eE2-vd-b1S">
             <objects>
-                <viewController title="Scroll Views" id="OdO-BJ-h8h" sceneMemberID="viewController">
+                <viewController title="Scroll Views" id="OdO-BJ-h8h" customClass="ScrollViewController" customModule="HIGExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JYo-aj-2U6"/>
                         <viewControllerLayoutGuide type="bottom" id="l9L-wk-qKH"/>
@@ -20,8 +20,22 @@
                     <view key="view" contentMode="scaleToFill" id="laJ-Df-Apb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmR-LC-5og">
+                                <rect key="frame" x="0.0" y="20" width="374" height="626"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SmR-LC-5og" firstAttribute="top" secondItem="JYo-aj-2U6" secondAttribute="bottom" id="6xP-bk-30P"/>
+                            <constraint firstItem="SmR-LC-5og" firstAttribute="centerY" secondItem="laJ-Df-Apb" secondAttribute="centerY" id="LnY-DE-CfE"/>
+                            <constraint firstItem="SmR-LC-5og" firstAttribute="centerX" secondItem="laJ-Df-Apb" secondAttribute="centerX" id="thD-EK-2tU"/>
+                            <constraint firstItem="SmR-LC-5og" firstAttribute="leading" secondItem="laJ-Df-Apb" secondAttribute="leading" id="xHO-T8-7gQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="SmR-LC-5og" id="Zqo-hn-Tod"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Wt-2K-Si1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

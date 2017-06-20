@@ -12,7 +12,7 @@
         <!--Popovers-->
         <scene sceneID="LPd-zZ-f2Y">
             <objects>
-                <viewController title="Popovers" id="I5G-gH-I9B" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="popoverStoryboard" title="Popovers" id="I5G-gH-I9B" customClass="PopoverViewController" customModule="HIGExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fw5-Do-D1M"/>
                         <viewControllerLayoutGuide type="bottom" id="fHE-2h-F6s"/>
@@ -20,7 +20,20 @@
                     <view key="view" contentMode="scaleToFill" id="OzR-rI-UNu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmc-RW-lJz">
+                                <rect key="frame" x="133.5" y="318" width="107" height="30"/>
+                                <state key="normal" title="Toggle Popover"/>
+                                <connections>
+                                    <action selector="togglePopover:" destination="I5G-gH-I9B" eventType="touchUpInside" id="TCX-4d-arB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nmc-RW-lJz" firstAttribute="centerY" secondItem="OzR-rI-UNu" secondAttribute="centerY" id="3Hk-c2-bFo"/>
+                            <constraint firstItem="nmc-RW-lJz" firstAttribute="centerX" secondItem="OzR-rI-UNu" secondAttribute="centerX" id="fR6-Vv-WaM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oof-VR-OGW" userLabel="First Responder" sceneMemberID="firstResponder"/>

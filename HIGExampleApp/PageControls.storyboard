@@ -12,7 +12,7 @@
         <!--Page View Controller-->
         <scene sceneID="UtC-hF-9Ts">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="9AO-tT-a2X" customClass="PageViewController" customModule="HIGExampleApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="9AO-tT-a2X" customClass="PageViewController" customModule="HIGExampleApp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C64-eo-8Zt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="690" y="182"/>

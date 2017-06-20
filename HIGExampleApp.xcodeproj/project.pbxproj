@@ -39,6 +39,8 @@
 		1DE509941EF842AD00B37AB4 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */; };
 		1DE509961EF843C100B37AB4 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509951EF843C100B37AB4 /* ActivityViewController.swift */; };
 		1DE509981EF8466300B37AB4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509971EF8466300B37AB4 /* CollectionViewController.swift */; };
+		EB83B8F71EF888C900374558 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83B8F61EF888C900374558 /* PopoverViewController.swift */; };
+		EB83B8F91EF88E0300374558 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83B8F81EF88E0300374558 /* ScrollViewController.swift */; };
 		EB8F3DB71EF0A05500C2948A /* HIGViewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */; };
 		EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */; };
 		EB8F3DBB1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */; };
@@ -101,6 +103,8 @@
 		1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
 		1DE509951EF843C100B37AB4 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		1DE509971EF8466300B37AB4 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		EB83B8F61EF888C900374558 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		EB83B8F81EF88E0300374558 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGViewsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGBarsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGVisualDesignDataSource.swift; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 		1D3FD7951EF05503007F9610 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				EB8F3DE71EF3240800C2948A /* PageViewController.swift */,
+				EB8F3DEA1EF32E1100C2948A /* PageViewControllerDataSource.swift */,
 				1D3FD7961EF0553F007F9610 /* Buttons.storyboard */,
 				1D3FD7981EF05D9D007F9610 /* EditMenus.storyboard */,
 				1D3FD79A1EF05DE1007F9610 /* PageControls.storyboard */,
@@ -214,8 +220,6 @@
 				1D3FD7A81EF0600A007F9610 /* Switches.storyboard */,
 				1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */,
 				EB8F3DE31EF2FAFD00C2948A /* PickersViewController.swift */,
-				EB8F3DE71EF3240800C2948A /* PageViewController.swift */,
-				EB8F3DEA1EF32E1100C2948A /* PageViewControllerDataSource.swift */,
 				EB8F3DEC1EF32F5100C2948A /* ControlElement.swift */,
 				1DE509841EF8273000B37AB4 /* EditMenusViewController.swift */,
 				1DE5098A1EF82DCD00B37AB4 /* ProgressViewController.swift */,
@@ -256,6 +260,8 @@
 				1DE509951EF843C100B37AB4 /* ActivityViewController.swift */,
 				1DE509971EF8466300B37AB4 /* CollectionViewController.swift */,
 				EB8F3DEE1EF879B200C2948A /* MapsViewController.swift */,
+				EB83B8F61EF888C900374558 /* PopoverViewController.swift */,
+				EB83B8F81EF88E0300374558 /* ScrollViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -372,6 +378,7 @@
 			files = (
 				1DE509921EF83F8900B37AB4 /* ActionSheetsViewController.swift in Sources */,
 				1D3FD78B1EF04253007F9610 /* MasterSubTableViewController.swift in Sources */,
+				EB83B8F71EF888C900374558 /* PopoverViewController.swift in Sources */,
 				EB8F3DE81EF3240800C2948A /* PageViewController.swift in Sources */,
 				1DE509961EF843C100B37AB4 /* ActivityViewController.swift in Sources */,
 				1D167C101EEF513700016B24 /* MasterTableViewController.swift in Sources */,
@@ -382,6 +389,7 @@
 				1D3FD7941EF047DD007F9610 /* HIGControlsDataSource.swift in Sources */,
 				EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */,
 				1DE5098D1EF831E000B37AB4 /* RefreshContentViewController.swift in Sources */,
+				EB83B8F91EF88E0300374558 /* ScrollViewController.swift in Sources */,
 				1DE509981EF8466300B37AB4 /* CollectionViewController.swift in Sources */,
 				1DE509941EF842AD00B37AB4 /* AlertsViewController.swift in Sources */,
 				EB8F3DE41EF2FAFD00C2948A /* PickersViewController.swift in Sources */,
