@@ -20,7 +20,82 @@
                     <view key="view" contentMode="scaleToFill" id="c4Q-gk-sJ8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="khk-lN-VBd">
+                                <rect key="frame" x="0.0" y="431" width="375" height="236"/>
+                                <subviews>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jnh-Ps-BKA">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <items>
+                                            <barButtonItem systemItem="flexibleSpace" id="QXG-6G-u1a"/>
+                                            <barButtonItem systemItem="rewind" id="aHB-ar-ZEb"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="Xsg-ax-3EQ"/>
+                                            <barButtonItem systemItem="pause" id="qtc-T7-IVq"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="nH0-i6-pk1"/>
+                                            <barButtonItem systemItem="play" id="dpZ-Sw-RHR"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="PSJ-hn-jxL"/>
+                                            <barButtonItem systemItem="fastForward" id="T6R-UA-2NX"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="HJF-Of-u2V"/>
+                                        </items>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </toolbar>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTJ-AR-vuC">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                        <items>
+                                            <barButtonItem systemItem="bookmarks" id="CAb-dm-BvU"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="27J-Dv-K09"/>
+                                            <barButtonItem systemItem="search" id="c9Z-cP-zWX"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="O1h-tl-HQ9"/>
+                                            <barButtonItem systemItem="refresh" id="ua8-5C-HUs"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="JNm-HK-HwJ"/>
+                                            <barButtonItem systemItem="stop" id="lV2-ey-hjF"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="qXF-EM-sna"/>
+                                            <barButtonItem systemItem="camera" id="8a9-0j-Ffb"/>
+                                        </items>
+                                    </toolbar>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17t-qh-KK5">
+                                        <rect key="frame" x="0.0" y="128" width="375" height="44"/>
+                                        <items>
+                                            <barButtonItem systemItem="compose" id="XKP-EZ-Pqv"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="2VC-BO-Kx7"/>
+                                            <barButtonItem systemItem="reply" id="D3r-yH-cbu"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="bsj-51-JlZ"/>
+                                            <barButtonItem systemItem="action" id="AiA-Ca-NTu"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="sg1-Fc-iLW"/>
+                                            <barButtonItem systemItem="organize" id="BAZ-AQ-WpN"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="oGp-v8-Cmn"/>
+                                            <barButtonItem systemItem="trash" id="EHv-L7-dca"/>
+                                        </items>
+                                        <color key="tintColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </toolbar>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLF-g0-DyL">
+                                        <rect key="frame" x="0.0" y="192" width="375" height="44"/>
+                                        <items>
+                                            <barButtonItem systemItem="add" id="58l-af-1iw"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="vZo-74-F0H"/>
+                                            <barButtonItem systemItem="edit" id="Ise-wR-fvb"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="8MY-Gz-MkE"/>
+                                            <barButtonItem systemItem="done" id="gCe-ka-hdm"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="dIS-T4-4ge"/>
+                                            <barButtonItem systemItem="cancel" id="2qd-3W-tA5"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="8Gi-5q-7Wa"/>
+                                            <barButtonItem systemItem="save" id="gRM-wJ-ght"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="krV-Cj-1oG"/>
+                                            <barButtonItem systemItem="undo" id="E4I-mO-IXo"/>
+                                            <barButtonItem systemItem="flexibleSpace" id="m6Y-XG-7jg"/>
+                                            <barButtonItem systemItem="redo" id="YzT-ri-1Ys"/>
+                                        </items>
+                                    </toolbar>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="khk-lN-VBd" firstAttribute="bottom" secondItem="AuM-p2-wSa" secondAttribute="top" id="H4u-Nf-kaB"/>
+                            <constraint firstAttribute="trailing" secondItem="khk-lN-VBd" secondAttribute="trailing" id="oOo-B6-cX3"/>
+                            <constraint firstItem="khk-lN-VBd" firstAttribute="leading" secondItem="c4Q-gk-sJ8" secondAttribute="leading" id="vOu-nc-YuJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CdG-f0-8RC" userLabel="First Responder" sceneMemberID="firstResponder"/>

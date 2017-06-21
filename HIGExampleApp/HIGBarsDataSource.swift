@@ -13,7 +13,7 @@ class HIGBarsDataSource: HIGElementDataSource {
     
     let itemList: [HIGBar] = [
         .navigationBars,
-        .statusBars,
+        .searchBars,
         .tabBars,
         .toolbars
     ]
@@ -32,8 +32,8 @@ class HIGBarsDataSource: HIGElementDataSource {
         switch itemList[index] {
         case .navigationBars:
             storyboardName = "NavigationBars"
-        case .statusBars:
-            storyboardName = "StatusBars"
+        case .searchBars:
+            storyboardName = "SearchBars"
         case .tabBars:
             storyboardName = "TabBars"
         case .toolbars:
@@ -47,7 +47,7 @@ class HIGBarsDataSource: HIGElementDataSource {
 
 enum HIGBar {
     case navigationBars
-    case statusBars
+    case searchBars
     case tabBars
     case toolbars
     
@@ -55,8 +55,8 @@ enum HIGBar {
         switch self {
         case .navigationBars:
             return "Navigation Bars"
-        case .statusBars:
-            return "Status Bars"
+        case .searchBars:
+            return "Search Bars"
         case .tabBars:
             return "Tab Bars"
         case .toolbars:

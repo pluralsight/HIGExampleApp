@@ -20,7 +20,16 @@
                     <view key="view" contentMode="scaleToFill" id="eWe-gW-wAI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Gd-KT-rma">
+                                <rect key="frame" x="163" y="318" width="51" height="31"/>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Gd-KT-rma" firstAttribute="centerX" secondItem="eWe-gW-wAI" secondAttribute="centerX" id="Jzn-Ii-ttd"/>
+                            <constraint firstItem="8Gd-KT-rma" firstAttribute="centerY" secondItem="eWe-gW-wAI" secondAttribute="centerY" id="NTD-fl-juC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1HH-FO-Web" userLabel="First Responder" sceneMemberID="firstResponder"/>

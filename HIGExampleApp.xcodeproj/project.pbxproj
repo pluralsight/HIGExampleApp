@@ -31,11 +31,21 @@
 		1D3FD7A71EF05FED007F9610 /* Steppers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7A61EF05FED007F9610 /* Steppers.storyboard */; };
 		1D3FD7A91EF0600A007F9610 /* Switches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7A81EF0600A007F9610 /* Switches.storyboard */; };
 		1D3FD7AB1EF0602B007F9610 /* TextFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */; };
+		1DE509851EF8273000B37AB4 /* EditMenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509841EF8273000B37AB4 /* EditMenusViewController.swift */; };
+		1DE5098B1EF82DCD00B37AB4 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5098A1EF82DCD00B37AB4 /* ProgressViewController.swift */; };
+		1DE5098D1EF831E000B37AB4 /* RefreshContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5098C1EF831E000B37AB4 /* RefreshContentViewController.swift */; };
+		1DE5098F1EF8383100B37AB4 /* SteppersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5098E1EF8383100B37AB4 /* SteppersViewController.swift */; };
+		1DE509921EF83F8900B37AB4 /* ActionSheetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509911EF83F8900B37AB4 /* ActionSheetsViewController.swift */; };
+		1DE509941EF842AD00B37AB4 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */; };
+		1DE509961EF843C100B37AB4 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509951EF843C100B37AB4 /* ActivityViewController.swift */; };
+		1DE509981EF8466300B37AB4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509971EF8466300B37AB4 /* CollectionViewController.swift */; };
+		1DE509BE1EF99D3F00B37AB4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE509BD1EF99D3F00B37AB4 /* WebViewController.swift */; };
+		EB83B8F71EF888C900374558 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83B8F61EF888C900374558 /* PopoverViewController.swift */; };
 		EB8F3DB71EF0A05500C2948A /* HIGViewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */; };
 		EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */; };
 		EB8F3DBB1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */; };
 		EB8F3DC01EF1806000C2948A /* NavigationBars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DBF1EF1806000C2948A /* NavigationBars.storyboard */; };
-		EB8F3DC21EF1807500C2948A /* StatusBars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DC11EF1807500C2948A /* StatusBars.storyboard */; };
+		EB8F3DC21EF1807500C2948A /* SearchBars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DC11EF1807500C2948A /* SearchBars.storyboard */; };
 		EB8F3DC41EF1808700C2948A /* TabBars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DC31EF1808700C2948A /* TabBars.storyboard */; };
 		EB8F3DC61EF1809900C2948A /* Toolbars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DC51EF1809900C2948A /* Toolbars.storyboard */; };
 		EB8F3DC81EF180CB00C2948A /* ActionSheets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DC71EF180CB00C2948A /* ActionSheets.storyboard */; };
@@ -44,13 +54,16 @@
 		EB8F3DCE1EF180F800C2948A /* Collections.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DCD1EF180F800C2948A /* Collections.storyboard */; };
 		EB8F3DD01EF1810800C2948A /* ImageViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DCF1EF1810800C2948A /* ImageViews.storyboard */; };
 		EB8F3DD21EF1811100C2948A /* Maps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DD11EF1811100C2948A /* Maps.storyboard */; };
-		EB8F3DD41EF1811B00C2948A /* Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DD31EF1811B00C2948A /* Pages.storyboard */; };
 		EB8F3DD61EF1812500C2948A /* Popovers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DD51EF1812500C2948A /* Popovers.storyboard */; };
 		EB8F3DD81EF1813500C2948A /* ScrollViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DD71EF1813500C2948A /* ScrollViews.storyboard */; };
-		EB8F3DDA1EF1814300C2948A /* Tables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DD91EF1814300C2948A /* Tables.storyboard */; };
 		EB8F3DDC1EF1815600C2948A /* TextViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DDB1EF1815600C2948A /* TextViews.storyboard */; };
 		EB8F3DDE1EF1816200C2948A /* WebViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DDD1EF1816200C2948A /* WebViews.storyboard */; };
 		EB8F3DE01EF1817300C2948A /* Typography.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8F3DDF1EF1817300C2948A /* Typography.storyboard */; };
+		EB8F3DE41EF2FAFD00C2948A /* PickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DE31EF2FAFD00C2948A /* PickersViewController.swift */; };
+		EB8F3DE81EF3240800C2948A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DE71EF3240800C2948A /* PageViewController.swift */; };
+		EB8F3DEB1EF32E1100C2948A /* PageViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DEA1EF32E1100C2948A /* PageViewControllerDataSource.swift */; };
+		EB8F3DED1EF32F5100C2948A /* ControlElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DEC1EF32F5100C2948A /* ControlElement.swift */; };
+		EB8F3DEF1EF879B200C2948A /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8F3DEE1EF879B200C2948A /* MapsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,11 +93,21 @@
 		1D3FD7A61EF05FED007F9610 /* Steppers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Steppers.storyboard; sourceTree = "<group>"; };
 		1D3FD7A81EF0600A007F9610 /* Switches.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Switches.storyboard; sourceTree = "<group>"; };
 		1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextFields.storyboard; sourceTree = "<group>"; };
+		1DE509841EF8273000B37AB4 /* EditMenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMenusViewController.swift; sourceTree = "<group>"; };
+		1DE5098A1EF82DCD00B37AB4 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		1DE5098C1EF831E000B37AB4 /* RefreshContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshContentViewController.swift; sourceTree = "<group>"; };
+		1DE5098E1EF8383100B37AB4 /* SteppersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteppersViewController.swift; sourceTree = "<group>"; };
+		1DE509911EF83F8900B37AB4 /* ActionSheetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetsViewController.swift; sourceTree = "<group>"; };
+		1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
+		1DE509951EF843C100B37AB4 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		1DE509971EF8466300B37AB4 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		1DE509BD1EF99D3F00B37AB4 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		EB83B8F61EF888C900374558 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		EB8F3DB61EF0A05500C2948A /* HIGViewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGViewsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DB81EF17B9700C2948A /* HIGBarsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGBarsDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DBA1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGVisualDesignDataSource.swift; sourceTree = "<group>"; };
 		EB8F3DBF1EF1806000C2948A /* NavigationBars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NavigationBars.storyboard; sourceTree = "<group>"; };
-		EB8F3DC11EF1807500C2948A /* StatusBars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StatusBars.storyboard; sourceTree = "<group>"; };
+		EB8F3DC11EF1807500C2948A /* SearchBars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchBars.storyboard; sourceTree = "<group>"; };
 		EB8F3DC31EF1808700C2948A /* TabBars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBars.storyboard; sourceTree = "<group>"; };
 		EB8F3DC51EF1809900C2948A /* Toolbars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Toolbars.storyboard; sourceTree = "<group>"; };
 		EB8F3DC71EF180CB00C2948A /* ActionSheets.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionSheets.storyboard; sourceTree = "<group>"; };
@@ -93,13 +116,16 @@
 		EB8F3DCD1EF180F800C2948A /* Collections.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Collections.storyboard; sourceTree = "<group>"; };
 		EB8F3DCF1EF1810800C2948A /* ImageViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageViews.storyboard; sourceTree = "<group>"; };
 		EB8F3DD11EF1811100C2948A /* Maps.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Maps.storyboard; sourceTree = "<group>"; };
-		EB8F3DD31EF1811B00C2948A /* Pages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pages.storyboard; sourceTree = "<group>"; };
 		EB8F3DD51EF1812500C2948A /* Popovers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popovers.storyboard; sourceTree = "<group>"; };
 		EB8F3DD71EF1813500C2948A /* ScrollViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScrollViews.storyboard; sourceTree = "<group>"; };
-		EB8F3DD91EF1814300C2948A /* Tables.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tables.storyboard; sourceTree = "<group>"; };
 		EB8F3DDB1EF1815600C2948A /* TextViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextViews.storyboard; sourceTree = "<group>"; };
 		EB8F3DDD1EF1816200C2948A /* WebViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebViews.storyboard; sourceTree = "<group>"; };
 		EB8F3DDF1EF1817300C2948A /* Typography.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Typography.storyboard; sourceTree = "<group>"; };
+		EB8F3DE31EF2FAFD00C2948A /* PickersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickersViewController.swift; sourceTree = "<group>"; };
+		EB8F3DE71EF3240800C2948A /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		EB8F3DEA1EF32E1100C2948A /* PageViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewControllerDataSource.swift; sourceTree = "<group>"; };
+		EB8F3DEC1EF32F5100C2948A /* ControlElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlElement.swift; sourceTree = "<group>"; };
+		EB8F3DEE1EF879B200C2948A /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +202,8 @@
 		1D3FD7951EF05503007F9610 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				EB8F3DE71EF3240800C2948A /* PageViewController.swift */,
+				EB8F3DEA1EF32E1100C2948A /* PageViewControllerDataSource.swift */,
 				1D3FD7961EF0553F007F9610 /* Buttons.storyboard */,
 				1D3FD7981EF05D9D007F9610 /* EditMenus.storyboard */,
 				1D3FD79A1EF05DE1007F9610 /* PageControls.storyboard */,
@@ -187,6 +215,12 @@
 				1D3FD7A61EF05FED007F9610 /* Steppers.storyboard */,
 				1D3FD7A81EF0600A007F9610 /* Switches.storyboard */,
 				1D3FD7AA1EF0602B007F9610 /* TextFields.storyboard */,
+				EB8F3DE31EF2FAFD00C2948A /* PickersViewController.swift */,
+				EB8F3DEC1EF32F5100C2948A /* ControlElement.swift */,
+				1DE509841EF8273000B37AB4 /* EditMenusViewController.swift */,
+				1DE5098A1EF82DCD00B37AB4 /* ProgressViewController.swift */,
+				1DE5098C1EF831E000B37AB4 /* RefreshContentViewController.swift */,
+				1DE5098E1EF8383100B37AB4 /* SteppersViewController.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -195,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				EB8F3DBF1EF1806000C2948A /* NavigationBars.storyboard */,
-				EB8F3DC11EF1807500C2948A /* StatusBars.storyboard */,
+				EB8F3DC11EF1807500C2948A /* SearchBars.storyboard */,
 				EB8F3DC31EF1808700C2948A /* TabBars.storyboard */,
 				EB8F3DC51EF1809900C2948A /* Toolbars.storyboard */,
 			);
@@ -211,12 +245,17 @@
 				EB8F3DCD1EF180F800C2948A /* Collections.storyboard */,
 				EB8F3DCF1EF1810800C2948A /* ImageViews.storyboard */,
 				EB8F3DD11EF1811100C2948A /* Maps.storyboard */,
-				EB8F3DD31EF1811B00C2948A /* Pages.storyboard */,
 				EB8F3DD51EF1812500C2948A /* Popovers.storyboard */,
 				EB8F3DD71EF1813500C2948A /* ScrollViews.storyboard */,
-				EB8F3DD91EF1814300C2948A /* Tables.storyboard */,
 				EB8F3DDB1EF1815600C2948A /* TextViews.storyboard */,
 				EB8F3DDD1EF1816200C2948A /* WebViews.storyboard */,
+				1DE509911EF83F8900B37AB4 /* ActionSheetsViewController.swift */,
+				1DE509931EF842AD00B37AB4 /* AlertsViewController.swift */,
+				1DE509951EF843C100B37AB4 /* ActivityViewController.swift */,
+				1DE509971EF8466300B37AB4 /* CollectionViewController.swift */,
+				EB8F3DEE1EF879B200C2948A /* MapsViewController.swift */,
+				EB83B8F61EF888C900374558 /* PopoverViewController.swift */,
+				1DE509BD1EF99D3F00B37AB4 /* WebViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -290,7 +329,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB8F3DC81EF180CB00C2948A /* ActionSheets.storyboard in Resources */,
-				EB8F3DD41EF1811B00C2948A /* Pages.storyboard in Resources */,
 				EB8F3DD81EF1813500C2948A /* ScrollViews.storyboard in Resources */,
 				EB8F3DE01EF1817300C2948A /* Typography.storyboard in Resources */,
 				1D3FD7971EF0553F007F9610 /* Buttons.storyboard in Resources */,
@@ -305,7 +343,7 @@
 				1D3FD7991EF05D9D007F9610 /* EditMenus.storyboard in Resources */,
 				EB8F3DCE1EF180F800C2948A /* Collections.storyboard in Resources */,
 				1D167C031EEF49A100016B24 /* LaunchScreen.storyboard in Resources */,
-				EB8F3DC21EF1807500C2948A /* StatusBars.storyboard in Resources */,
+				EB8F3DC21EF1807500C2948A /* SearchBars.storyboard in Resources */,
 				EB8F3DD21EF1811100C2948A /* Maps.storyboard in Resources */,
 				1D167C0D1EEF4FF100016B24 /* MasterTableViewController.storyboard in Resources */,
 				EB8F3DDE1EF1816200C2948A /* WebViews.storyboard in Resources */,
@@ -313,7 +351,6 @@
 				EB8F3DC41EF1808700C2948A /* TabBars.storyboard in Resources */,
 				1D3FD7A11EF05F66007F9610 /* RefreshContentControl.storyboard in Resources */,
 				EB8F3DCA1EF180DF00C2948A /* ActivityViews.storyboard in Resources */,
-				EB8F3DDA1EF1814300C2948A /* Tables.storyboard in Resources */,
 				1D3FD79F1EF05F36007F9610 /* Progress.storyboard in Resources */,
 				1D3FD7A71EF05FED007F9610 /* Steppers.storyboard in Resources */,
 				1D167C001EEF49A100016B24 /* Assets.xcassets in Resources */,
@@ -331,17 +368,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE509921EF83F8900B37AB4 /* ActionSheetsViewController.swift in Sources */,
+				1DE509BE1EF99D3F00B37AB4 /* WebViewController.swift in Sources */,
 				1D3FD78B1EF04253007F9610 /* MasterSubTableViewController.swift in Sources */,
+				EB83B8F71EF888C900374558 /* PopoverViewController.swift in Sources */,
+				EB8F3DE81EF3240800C2948A /* PageViewController.swift in Sources */,
+				1DE509961EF843C100B37AB4 /* ActivityViewController.swift in Sources */,
 				1D167C101EEF513700016B24 /* MasterTableViewController.swift in Sources */,
+				1DE509851EF8273000B37AB4 /* EditMenusViewController.swift in Sources */,
 				EB8F3DBB1EF17EDC00C2948A /* HIGVisualDesignDataSource.swift in Sources */,
 				EB8F3DB71EF0A05500C2948A /* HIGViewsDataSource.swift in Sources */,
 				1D167BFB1EEF49A100016B24 /* ViewController.swift in Sources */,
 				1D3FD7941EF047DD007F9610 /* HIGControlsDataSource.swift in Sources */,
 				EB8F3DB91EF17B9700C2948A /* HIGBarsDataSource.swift in Sources */,
+				1DE5098D1EF831E000B37AB4 /* RefreshContentViewController.swift in Sources */,
+				1DE509981EF8466300B37AB4 /* CollectionViewController.swift in Sources */,
+				1DE509941EF842AD00B37AB4 /* AlertsViewController.swift in Sources */,
+				EB8F3DE41EF2FAFD00C2948A /* PickersViewController.swift in Sources */,
+				EB8F3DEF1EF879B200C2948A /* MapsViewController.swift in Sources */,
 				1D3FD7911EF04631007F9610 /* HIGElementDataSourceFactory.swift in Sources */,
+				EB8F3DED1EF32F5100C2948A /* ControlElement.swift in Sources */,
 				1D167C121EF0415200016B24 /* HIGElement.swift in Sources */,
 				1D3FD78F1EF04523007F9610 /* HIGElementDataSource.swift in Sources */,
 				1D167BF91EEF49A100016B24 /* AppDelegate.swift in Sources */,
+				1DE5098F1EF8383100B37AB4 /* SteppersViewController.swift in Sources */,
+				1DE5098B1EF82DCD00B37AB4 /* ProgressViewController.swift in Sources */,
+				EB8F3DEB1EF32E1100C2948A /* PageViewControllerDataSource.swift in Sources */,
 				1D167C0B1EEF4FAB00016B24 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

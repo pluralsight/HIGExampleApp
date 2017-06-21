@@ -18,10 +18,8 @@ class HIGViewsDataSource: HIGElementDataSource {
         .collections,
         .imageViews,
         .maps,
-        .pages,
         .popovers,
         .scrollViews,
-        .tables,
         .textViews,
         .webViews
     ]
@@ -50,14 +48,10 @@ class HIGViewsDataSource: HIGElementDataSource {
             storyboardName = "ImageViews"
         case .maps:
             storyboardName = "Maps"
-        case .pages:
-            storyboardName = "Pages"
         case .popovers:
             storyboardName = "Popovers"
         case .scrollViews:
             storyboardName = "ScrollViews"
-        case .tables:
-            storyboardName = "Tables"
         case .textViews:
             storyboardName = "TextViews"
         case .webViews:
@@ -76,10 +70,8 @@ enum HIGView {
     case collections
     case imageViews
     case maps
-    case pages
     case popovers
     case scrollViews
-    case tables
     case textViews
     case webViews
     
@@ -97,14 +89,10 @@ enum HIGView {
             return "Image Views"
         case .maps:
             return "Maps"
-        case .pages:
-            return "Pages"
         case .popovers:
             return "Popovers"
         case .scrollViews:
             return "Scroll Views"
-        case .tables:
-            return "Tables"
         case .textViews:
             return "Text Views"
         case .webViews:

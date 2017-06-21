@@ -49,7 +49,18 @@ class MasterSubTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let vc = elementDataSource?.viewController(for: indexPath.row) else { return }
+        
+        
+        if let pageViewController = vc as? PageViewController {
+            switch HIGControlsDataSource.itemList[indexPath.row] {
+            case .pickers:
+                pageViewController.pages.controlElement = .pickers
+            case .pageControls:
+                pageViewController.pages.controlElement = .pageControls
+            default:
+                break
+            }
+        }
         showDetailViewController(vc, sender: self)
     }
-
 }
