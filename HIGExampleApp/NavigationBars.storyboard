@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pec-hc-N9v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pec-hc-N9v">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,31 +22,108 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZgE-cr-Fd2">
-                                <rect key="frame" x="0.0" y="82" width="375" height="74"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Navigation Bar" prompt="Prompt" id="kol-id-Ykc">
-                                        <barButtonItem key="backBarButtonItem" title="Back" id="J8R-ik-0E9">
-                                            <color key="tintColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ps_hero" translatesAutoresizingMaskIntoConstraints="NO" id="r1h-pe-Tk9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R9f-Pd-Eg3">
+                                <rect key="frame" x="0.0" y="168.5" width="375" height="330"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd7-Vz-lrw">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="Default" id="1mn-lU-M3f">
+                                                <barButtonItem key="backBarButtonItem" title="Back" id="8pg-vI-u2J">
+                                                    <color key="tintColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </barButtonItem>
+                                                <barButtonItem key="leftBarButtonItem" title="Item" id="eis-6J-2DS"/>
+                                                <rightBarButtonItems>
+                                                    <barButtonItem title="Item" id="afh-bI-di1"/>
+                                                    <barButtonItem title="Item" id="7aH-rc-p57"/>
+                                                </rightBarButtonItems>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUK-Bt-V9e">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="Default - Not Translucent" id="7Of-fk-oKO">
+                                                <barButtonItem key="backBarButtonItem" title="Back" id="jXc-i1-JGv">
+                                                    <color key="tintColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </barButtonItem>
+                                                <barButtonItem key="leftBarButtonItem" title="Item" id="YbJ-al-tAN"/>
+                                                <barButtonItem key="rightBarButtonItem" title="Item" id="TrM-3e-x7K"/>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZgE-cr-Fd2">
+                                        <rect key="frame" x="0.0" y="128" width="375" height="74"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="Navigation Bar" prompt="Prompt" id="kol-id-Ykc">
+                                                <barButtonItem key="backBarButtonItem" title="Back" id="J8R-ik-0E9">
+                                                    <color key="tintColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </barButtonItem>
+                                                <barButtonItem key="leftBarButtonItem" title="Item" id="U1Z-kd-kLA"/>
+                                                <barButtonItem key="rightBarButtonItem" title="Item" id="ZwK-DZ-JOn"/>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="FfW-u1-xc7">
+                                        <rect key="frame" x="0.0" y="222" width="375" height="44"/>
+                                        <items>
+                                            <navigationItem title="Black Translucent" id="VK3-YB-uXP">
+                                                <barButtonItem key="backBarButtonItem" title="Back" id="ERQ-jq-nqw">
+                                                    <color key="tintColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </barButtonItem>
+                                                <barButtonItem key="leftBarButtonItem" title="Item" id="39W-5q-UeN"/>
+                                                <barButtonItem key="rightBarButtonItem" title="Item" id="UDG-RQ-a3f"/>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WJ-ag-ljZ">
+                                        <rect key="frame" x="0.0" y="286" width="375" height="44"/>
+                                        <items>
+                                            <navigationItem title="Black - Not Translucent" id="dnk-hn-C12">
+                                                <barButtonItem key="backBarButtonItem" title="Back" id="ig4-n3-Mnp">
+                                                    <color key="tintColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </barButtonItem>
+                                                <barButtonItem key="leftBarButtonItem" title="Item" id="iPK-Lj-xpJ"/>
+                                                <rightBarButtonItems>
+                                                    <barButtonItem title="Item" id="Mct-Sz-g4V"/>
+                                                    <barButtonItem title="Item" id="05s-IT-2jv"/>
+                                                </rightBarButtonItems>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZgE-cr-Fd2" firstAttribute="top" secondItem="nT8-Ie-0mE" secondAttribute="bottom" constant="62" id="8XM-iz-1D1"/>
-                            <constraint firstItem="ZgE-cr-Fd2" firstAttribute="leading" secondItem="wXP-bR-SwM" secondAttribute="leading" id="HhJ-0z-pFo"/>
-                            <constraint firstAttribute="trailing" secondItem="ZgE-cr-Fd2" secondAttribute="trailing" id="dSH-Ix-Mhr"/>
+                            <constraint firstItem="r1h-pe-Tk9" firstAttribute="leading" secondItem="R9f-Pd-Eg3" secondAttribute="leading" id="JBU-hF-FFO"/>
+                            <constraint firstItem="R9f-Pd-Eg3" firstAttribute="centerX" secondItem="wXP-bR-SwM" secondAttribute="centerX" id="Uzr-vB-Bkl"/>
+                            <constraint firstItem="r1h-pe-Tk9" firstAttribute="trailing" secondItem="R9f-Pd-Eg3" secondAttribute="trailing" id="Z07-ij-e02"/>
+                            <constraint firstItem="r1h-pe-Tk9" firstAttribute="top" secondItem="wXP-bR-SwM" secondAttribute="top" id="aAr-tV-6gh"/>
+                            <constraint firstItem="R9f-Pd-Eg3" firstAttribute="centerY" secondItem="wXP-bR-SwM" secondAttribute="centerY" id="gp2-Be-0ry"/>
+                            <constraint firstItem="r1h-pe-Tk9" firstAttribute="leading" secondItem="wXP-bR-SwM" secondAttribute="leading" id="iLp-H4-dCz"/>
+                            <constraint firstItem="r1h-pe-Tk9" firstAttribute="bottom" secondItem="6Ba-Jf-Hvk" secondAttribute="top" id="y2G-je-NfM"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fm8-of-ny5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="112"/>
+            <point key="canvasLocation" x="93.599999999999994" y="111.99400299850076"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ps_hero" width="1950" height="1173"/>
+    </resources>
 </document>
