@@ -33,7 +33,7 @@ class ProgressViewController: UIViewController {
     
     @IBAction func toggleProgressBar(_ sender: Any) {
         progressBar.setProgress(0, animated: false)
-        DispatchQueue.main.async {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.progressBar.setProgress(1, animated: true)
         }
     }
